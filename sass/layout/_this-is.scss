@@ -1,0 +1,32 @@
+/* ========== This Is Section ========== */
+.this-is {
+  background: linear-gradient(97.87deg, #474747 13.61%, rgba(71, 71, 71, 0) 79.19%);
+  background-color: #212121;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    text-align: center;
+    width: 200px;
+  }
+
+  &__title {
+    @include font(500, 48px, 46px);
+    color: $title-dark-theme-color;
+  }
+
+  &__svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 82px;
+    height: 82px;
+    margin: 0 auto 16px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+  }
+}
+/* ========== End This Is Section ========== */

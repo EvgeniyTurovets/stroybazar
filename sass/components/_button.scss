@@ -1,0 +1,68 @@
+/* ========== Button ========== */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &--white {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: $text-white-theme-color;
+  }
+  
+  &--transparent-white {
+    border-color: #ffffff;
+    color: $text-dark-theme-color;
+  }
+  
+  &--red {
+    background-color: $accent-color;
+    border-color: $accent-color;
+    color: $text-dark-theme-color;
+  }
+  
+  &--transparent-red {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
+
+  &:hover {
+    box-shadow: inset 0px 0px 4px 1px #313131;
+    font-size: 11px;
+  }
+}
+
+.button-with-arrow {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  transition: box-shadow $transition-delay, font-size $transition-delay, transform $transition-delay;
+
+  &--white-black {
+    background: #FFFFFF;
+  }
+
+  &--transparent-red {
+    // background: #FFFFFF;
+  }
+
+  &:hover {
+    box-shadow: inset 0px 0px 4px 1px #313131;
+    font-size: 11px;
+  }
+
+  &:hover > svg {
+    transform: scale(0.9, 0.9);
+  }
+}
+/* ========== End Button ========== */
