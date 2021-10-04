@@ -7,19 +7,19 @@
   &__link {
     @include font(500, 17px, 20px);
     color: $accent-color;
-    
+
     &:hover {
       text-decoration: underline;
     }
   }
-  
+
   &__list-container {
     position: relative;
     margin-bottom: 50px;
   }
 
   &__item {
-    background: #F7F7F7;
+    background: #f7f7f7;
     border-radius: 3px;
   }
 
@@ -106,7 +106,7 @@
       left: -20px;
       transform: translateY(-50%);
     }
-    
+
     &__button--next {
       right: -20px;
       transform: rotate(0.5turn) translateY(50%);
@@ -114,6 +114,11 @@
 
     &__list {
       display: flex;
+      margin: -15px;
+    }
+
+    &__item {
+      margin: 15px;
     }
   }
 }
@@ -122,12 +127,10 @@
   .catalogue {
     &__list {
       flex-wrap: wrap;
-      margin: -15px;
     }
 
     &__item {
       width: calc((100% - 4 * 15px) / 2);
-      margin: 15px;
     }
   }
 }
@@ -146,7 +149,6 @@
 
     &__item {
       width: calc((100% - 5 * 15px) / 2.5);
-      margin: 15px;
     }
   }
 }

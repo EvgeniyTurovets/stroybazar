@@ -656,7 +656,7 @@ body {
 }
 
 .catalogue__item {
-  background: #F7F7F7;
+  background: #f7f7f7;
   border-radius: 3px;
 }
 
@@ -742,17 +742,19 @@ body {
   }
   .catalogue__list {
     display: flex;
+    margin: -15px;
+  }
+  .catalogue__item {
+    margin: 15px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .catalogue__list {
     flex-wrap: wrap;
-    margin: -15px;
   }
   .catalogue__item {
     width: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
   }
 }
 
@@ -767,7 +769,6 @@ body {
   }
   .catalogue__item {
     width: calc((100% - 5 * 15px) / 2.5);
-    margin: 15px;
   }
 }
 
