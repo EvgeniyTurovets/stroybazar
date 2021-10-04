@@ -3,6 +3,10 @@
   background: linear-gradient(97.87deg, #474747 13.61%, rgba(71, 71, 71, 0) 79.19%);
   background-color: #212121;
 
+  &__title {
+    margin-bottom: 50px;
+  }
+
   &__list {
     display: flex;
     justify-content: space-between;

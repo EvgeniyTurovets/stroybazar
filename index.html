@@ -487,11 +487,9 @@
           </ul>
         </div>
 
-        <div class="catalogue__main-link-container">
-          <a class="link catalogue__main-link" href="#">
-            Перейти в каталог товаров
-          </a>
-        </div>
+        <a class="link catalogue__main-link" href="#">
+          Перейти в каталог товаров
+        </a>
       </div>
     </section>
 
@@ -552,8 +550,63 @@
     <section class="section promotions">
       <div class="container promotions__container">
         <div class="promotions__title-container">
-          <h2 class="title promotions__title"></h2>
+          <h2 class="title promotions__title">Акции</h2>
+          <button
+            class="
+              button-with-arrow button-with-arrow--transparent-red
+              promotions__button promotions__button--prev
+            "
+            type="button"
+          >
+            <svg class="img promotions__button-svg" width="10" height="16">
+              <use href="./icons/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <button
+            class="
+              button-with-arrow button-with-arrow--transparent-red
+              promotions__button promotions__button--next
+            "
+            type="button"
+          >
+            <svg class="img promotions__button-svg" width="10" height="16">
+              <use href="./icons/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
         </div>
+
+        <ul class="list promotions__list">
+          <li class="promotions__item promotions__item--first">
+            <h3 class="promotions__item-subtitle">
+              Снизим цену, если нашли нужный товар дешевле
+            </h3>
+            <button
+              class="button button--transparent-red promotions__item-button"
+              type="button"
+            >
+              Подробнее
+            </button>
+            <span class="promotions__item-text">
+              акция действует: до 30.08.2021
+            </span>
+          </li>
+          <li class="promotions__item promotions__item--second">
+            <h3 class="promotions__item-subtitle">
+              Дарим промокод на покупку садовой техники
+            </h3>
+            <button
+              class="button button--transparent-red promotions__item-button"
+              type="button"
+            >
+              Подробнее
+            </button>
+            <span class="promotions__item-text">
+              акция действует: до 30.08.2021
+            </span>
+          </li>
+        </ul>
+
+        <a class="link promotions__main-link" href="#">Все акции</a>
       </div>
     </section>
   </body>

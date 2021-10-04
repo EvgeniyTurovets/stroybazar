@@ -5,6 +5,7 @@
   align-items: center;
   border: 1px solid;
   border-radius: 5px;
+  @include font(500, 18px, 57px);
   cursor: pointer;
 
   &--white {
@@ -30,8 +31,8 @@
   }
 
   &:hover {
-    box-shadow: inset 0px 0px 4px 1px #313131;
-    font-size: 11px;
+    box-shadow: inset 0px 0px 6px 0px #313131;
+    font-size: 17px;
   }
 }
 
@@ -53,12 +54,15 @@
   }
 
   &--transparent-red {
-    // background: #FFFFFF;
+    border: 1px solid $accent-color;
+  }
+
+  &--transparent-red svg {
+    fill: $accent-color;
   }
 
   &:hover {
-    box-shadow: inset 0px 0px 4px 1px #313131;
-    font-size: 11px;
+    box-shadow: inset 0px 0px 4px 0px #313131;
   }
 
   &:hover > svg {
