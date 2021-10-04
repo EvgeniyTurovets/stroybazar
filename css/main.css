@@ -900,11 +900,11 @@ body {
 }
 
 .promotions__item--first {
-  background-image: url("../../images/index/promotions/bg-item-1.jpg");
+  background-image: url("../images/index/promotions/bg-item-1.jpg");
 }
 
 .promotions__item--second {
-  background-image: url("../../images/index/promotions/bg-item-2.jpg");
+  background-image: url("../images/index/promotions/bg-item-2.jpg");
 }
 
 .promotions__item-subtitle {
@@ -1019,10 +1019,6 @@ body {
 
 .popular-goods__item-thumb-item:nth-child(5) {
   background-color: #E2E5FF;
-}
-
-.popular-goods__item-thumb-item:nth-child(6) {
-  background-color: #FFCDCD;
 }
 
 .popular-goods__svg-container {
