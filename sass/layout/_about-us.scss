@@ -1,0 +1,60 @@
+.about-us {
+  &__section,
+  &__section .title {
+    background: linear-gradient(97.87deg, #474747 103.61%, rgba(71, 71, 71, 0) 79.19%);
+    color: $text-dark-theme-color;
+  }
+
+  &__container > div {
+    margin: 0 23px;
+  }
+
+  &__content .text {
+    margin-top: 21px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: justify;
+  }
+
+  &__content .text > p {
+    margin-top: 34px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    position: relative;
+    text-align: center;
+  }
+
+  &__img--background {
+    position: absolute;
+    min-height: 411px;
+    width: 91%;
+    left: 20px;
+    right: 20px;
+    border: 1px solid $accent-color;
+    z-index: 1;
+  }
+
+  &__img--img {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    z-index: 4;
+  }
+
+  &__img--img > .arrow {
+    position: absolute;
+    left: 137px;
+    top: 66px;
+  }
+
+  &__img--img > p {
+    margin-top: 15px;
+  }
+}

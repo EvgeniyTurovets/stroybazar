@@ -5,97 +5,156 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Строй Базар</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <!--* Header Section -->
-    <!-- <header class="header">
+     <header class="header">
       <div class="container header__container">
-        <address class="address header-address-locations">
-          <ul class="list header-address-locations__list">
-            <li class="item header-address-locations__item">
-              <a class="link header-address-locations__link" href="#">
-                Москва
-              </a>
-            </li>
-            <li class="item header-address-locations__item">
-              <a class="link header-address-locations__link" href="#">
-                Магазины
-              </a>
-            </li>
+        <div class="header__top-line">
+          <address class="address header-address-locations">
+            <ul class="list header-address-locations__list">
+              <li class="item header-address-locations__item">
+                <a class="link header-address-locations__link" href="#">
+                  Москва
+                </a>
+              </li>
+              <li class="item header-address-locations__item">
+                <a class="link header-address-locations__link" href="#">
+                  Магазины
+                </a>
+              </li>
+            </ul>
+          </address>
+          <nav class="navigation header-navigation">
+            <ul class="list header-navigation__list">
+              <li class="item header-navigation__item">
+                <a class="link header-navigation__link" href="#">Оплата</a>
+              </li>
+              <li class="item header-navigation__item">
+                <a class="link header-navigation__link" href="#">Доставка</a>
+              </li>
+              <li class="item header-navigation__item">
+                <a class="link header-navigation__link" href="#">
+                  Статус заказа
+                </a>
+              </li>
+              <li class="item header-navigation__item">
+                <div class="header-navigation__link client-menu__thumb">
+                  <span class="client-menu__text">Клиенту</span>
+                  <svg class="img" width="10" height="6">
+                    <use href="./icons/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+<!--                <ul class="list client-menu__list">-->
+<!--                  <li class="item client-menu__item">-->
+<!--                    <a class="link client-menu__link" href="#">Акции</a>-->
+<!--                  </li>-->
+<!--                  <li class="item client-menu__item">-->
+<!--                    <a class="link client-menu__link" href="#">Оплата</a>-->
+<!--                  </li>-->
+<!--                  <li class="item client-menu__item">-->
+<!--                    <a class="link client-menu__link" href="#">Доставка</a>-->
+<!--                  </li>-->
+<!--                  <li class="item client-menu__item">-->
+<!--                    <a class="link client-menu__link" href="#">Статус заказа</a>-->
+<!--                  </li>-->
+<!--                  <li class="item client-menu__item">-->
+<!--                    <a class="link client-menu__link" href="#">-->
+<!--                      Сервисные центры-->
+<!--                    </a>-->
+<!--                  </li>-->
+<!--                </ul>-->
+              </li>
+              <li class="item header-navigation__item">
+                <a class="link header-navigation__link" href="#">Компаниям</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="address header-address-telephones">
+            <ul class="list header-address-telephones__list">
+              <li class="item header-address-telephones__item">
+                <a
+                        class="link header-address-telephones__link"
+                        href="tel:+74952151778"
+                >
+                  +7 (495) 215-17-78
+                </a>
+              </li>
+              <li class="item header-address-telephones__item">
+                <a
+                        class="link header-address-telephones__link"
+                        href="tel:88005550874"
+                >
+                  8 (800) 555-08-74
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="header__middle-line">
+          <div class="header__logo">
+            <a href="/">
+              <img src="./images/logo.png" alt="logo">
+            </a>
+          </div>
+          <div class="header__catalogue">
+            <svg class="img catalogue__button-svg" width="25" height="25">
+              <use href="./icons/sprite.svg#icon-menu"></use>
+            </svg>
+            <span>КАТАЛОГ</span>
+          </div>
+          <div class="header__search">
+            <input type="search" placeholder="поиск по каталогу">
+          </div>
+          <div class="header__user-img">
+            <svg class="img catalogue__button-svg" width="25" height="25">
+              <use href="./icons/sprite.svg#icon-human"></use>
+            </svg>
+            <span>Константин</span>
+          </div>
+          <div class="header__categories">
+            <div>
+              <svg class="img catalogue__button-svg" width="25" height="25">
+                <use href="./icons/sprite.svg#icon-diagram"></use>
+              </svg>
+              <span>Сравнение</span>
+            </div>
+            <div>
+              <svg class="img catalogue__button-svg" width="25" height="25">
+                <use href="./icons/sprite.svg#icon-heart"></use>
+              </svg>
+              <span>
+                Избранное
+              </span>
+            </div>
+            <div>
+              <svg class="img catalogue__button-svg" width="25" height="25">
+                <use href="./icons/sprite.svg#icon-trolley"></use>
+              </svg>
+              <span>
+                Корзина
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom-line">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">Акции</li>
+            <li class="header__menu-item">Распродажа</li>
+            <li class="header__menu-item">Электроинструмент</li>
+            <li class="header__menu-item">Строительная техника</li>
+            <li class="header__menu-item">Садовая техника</li>
+            <li class="header__menu-item">Климатическое оборудование</li>
+            <li class="header__menu-item">Ручные инструменты</li>
           </ul>
-        </address>
-
-        <nav class="navigation header-navigation">
-          <ul class="list header-navigation__list">
-            <li class="item header-navigation__item">
-              <a class="link header-navigation__link" href="#">Оплата</a>
-            </li>
-            <li class="item header-navigation__item">
-              <a class="link header-navigation__link" href="#">Доставка</a>
-            </li>
-            <li class="item header-navigation__item">
-              <a class="link header-navigation__link" href="#">
-                Статус заказа
-              </a>
-            </li>
-            <li class="item header-navigation__item">
-              <div class="header-navigation__link client-menu__thumb">
-                <span class="client-menu__text">Клиенту</span>
-                <svg class="img" width="10" height="6">
-                  <use href="./icons/sprite.svg#icon-arrow"></use>
-                </svg>
-              </div>
-              <ul class="list client-menu__list">
-                <li class="item client-menu__item">
-                  <a class="link client-menu__link" href="#">Акции</a>
-                </li>
-                <li class="item client-menu__item">
-                  <a class="link client-menu__link" href="#">Оплата</a>
-                </li>
-                <li class="item client-menu__item">
-                  <a class="link client-menu__link" href="#">Доставка</a>
-                </li>
-                <li class="item client-menu__item">
-                  <a class="link client-menu__link" href="#">Статус заказа</a>
-                </li>
-                <li class="item client-menu__item">
-                  <a class="link client-menu__link" href="#">
-                    Сервисные центры
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="item header-navigation__item">
-              <a class="link header-navigation__link" href="#">Компаниям</a>
-            </li>
-          </ul>
-        </nav>
-
-        <address class="address header-address-telephones">
-          <ul class="list header-address-telephones__list">
-            <li class="item header-address-telephones__item">
-              <a
-                class="link header-address-telephones__link"
-                href="tel:+74952151778"
-              >
-                +7 (495) 215-17-78
-              </a>
-            </li>
-            <li class="item header-address-telephones__item">
-              <a
-                class="link header-address-telephones__link"
-                href="tel:88005550874"
-              >
-                8 (800) 555-08-74
-              </a>
-            </li>
-          </ul>
-        </address>
+        </div>
       </div>
-    </header> -->
+    </header>
 
     <!--* Slider Section -->
     <section class="slider slider--grey">
@@ -611,322 +670,2236 @@
     </section>
 
     <!--* Popular Goods Section -->
-    <section class="section popular-goods">
-      <div class="container popular-goods__container">
-        <div class="popular-goods__title-container">
-          <h2 class="title popular-goods__title">Популярные товары</h2>
+    <section class="section products-section popular-goods">
+      <div class="container products-section__container">
+        <div class="products-section__title-container">
+          <h2 class="title products-section__title">Популярные товары</h2>
           <button
             class="
               button-with-arrow button-with-arrow--transparent-red
-              popular-goods__button popular-goods__button--prev
+              products-section__button products-section__button--prev
             "
             type="button"
           >
-            <svg class="img popular-goods__button-svg" width="10" height="16">
+            <svg class="img products-section__button-svg" width="10" height="16">
               <use href="./icons/sprite.svg#icon-arrow"></use>
             </svg>
           </button>
           <button
             class="
               button-with-arrow button-with-arrow--transparent-red
-              popular-goods__button popular-goods__button--next
+              products-section__button products-section__button--next
             "
             type="button"
           >
-            <svg class="img popular-goods__button-svg" width="10" height="16">
+            <svg class="img products-section__button-svg" width="10" height="16">
               <use href="./icons/sprite.svg#icon-arrow"></use>
             </svg>
           </button>
         </div>
 
-        <ul class="list popular-goods__list">
-          <li class="popular-goods__item">
-            <div class="popular-goods__item-thumb">
-              <ul class="list popular-goods__item-thumb-list">
-                <li class="popular-goods__item-thumb-item">Хит продаж</li>
-                <li class="popular-goods__item-thumb-item">Распродажа</li>
-                <li class="popular-goods__item-thumb-item">Новинка</li>
-                <li class="popular-goods__item-thumb-item">Акции</li>
-                <li class="popular-goods__item-thumb-item">%</li>
-              </ul>
-              <img src="./images/catalogue/item-5.png" alt="Шуруповёрт" />
-              <div class="popular-goods__item-thumb-svg-container">
-                <svg class="img popular-goods__svg" width="17" height="17">
-                  <use href="./icons/sprite.svg#icon-diagram"></use>
-                </svg>
-                <svg class="img popular-goods__svg" width="18" height="15">
-                  <use href="./icons/sprite.svg#icon-heart"></use>
-                </svg>
+        <ul class="list products-section__list">
+            <li class="products-section__item">
+            <ul class="list products-section__item-thumb-list">
+              <li class="products-section__item-thumb-item">Хит продаж</li>
+              <li class="products-section__item-thumb-item">Распродажа</li>
+              <li class="products-section__item-thumb-item">Новинка</li>
+              <li class="products-section__item-thumb-item">Акции</li>
+              <li class="products-section__item-thumb-item">%</li>
+            </ul>
+            <div class="products-section__item-header">
+              <div class="products-section__item-thumb">
+                  <img src="./images/catalogue/item-16.png" alt="Шуруповёрт" />
+                  <div class="products-section__item-thumb-svg-container">
+                    <svg class="img products-section__svg" width="17" height="17">
+                      <use href="./icons/sprite.svg#icon-diagram"></use>
+                    </svg>
+                    <svg class="img products-section__svg liked" width="18" height="15">
+                      <use href="./icons/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </div>
               </div>
             </div>
 
-            <div class="popular-goods__item-content">
-              <span class="popular-goods__article">арт. 0000003</span>
-              <span
-                class="
-                  popular-goods__availability
-                  popular-goods__availability--available
+            <div class="products-section__item-content">
+              <div class="products-section__item-content--header">
+                <span class="products-section__article">арт. 0000003</span>
+                <span
+                        class="
+                  products-section__availability
+                  products-section__availability--available
                 "
                 >в наличии</span
-              >
+                >
+              </div>
               <div
                 class="
-                  popular-goods__svg-container
-                  popular-goods__svg-container--four
+                  products-section__svg-container
+                  products-section__svg-container--four
                 "
               >
-                <svg class="img popular-goods__svg" width="14" height="14">
+                <svg class="img products-section__svg" width="14" height="14">
                   <use href="./icons/sprite.svg#icon-star"></use>
                 </svg>
-                <svg class="img popular-goods__svg" width="14" height="14">
+                <svg class="img products-section__svg" width="14" height="14">
                   <use href="./icons/sprite.svg#icon-star"></use>
                 </svg>
-                <svg class="img popular-goods__svg" width="14" height="14">
+                <svg class="img products-section__svg" width="14" height="14">
                   <use href="./icons/sprite.svg#icon-star"></use>
                 </svg>
-                <svg class="img popular-goods__svg" width="14" height="14">
+                <svg class="img products-section__svg" width="14" height="14">
                   <use href="./icons/sprite.svg#icon-star"></use>
                 </svg>
-                <svg class="img popular-goods__svg" width="14" height="14">
+                <svg class="img products-section__svg" width="14" height="14">
                   <use href="./icons/sprite.svg#icon-star"></use>
                 </svg>
               </div>
-              <span class="popular-goods__text">
+              <span class="products-section__text">
                 Ультра-легкие открытые очки с янтарными линзами из поликарбоната
                 HONEYWELL
               </span>
-              <div class="popular-goods__price-container">
-                <span class="popular-goods__price-text">цена</span>
-                <span class="popular-goods__old-price">35 000 руб.</span>
-                <span class="popular-goods__new-price">33 000 руб.</span>
+              <div class="products-section__price-container">
+                <div class="products-section__price-text">цена</div>
+                <div class="products-section__price-values">
+                  <span class="products-section__old-price old-price">35 000 руб.</span>
+                  <span class="products-section__new-price">33 000 руб.</span>
+                </div>
               </div>
-              <button class="popular-goods__item-button" type="button">
-                <svg class="img popular-goods__item-svg" width="25" height="24">
+              <button class="button button--transparent-red products-section__item-button"
+                      type="button">
+                <svg class="img products-section__item-svg" width="25" height="24">
                   <use href="./icons/sprite.svg#icon-trolley"></use>
                 </svg>
                 В корзину
               </button>
-              <a class="link popular-goods__item-link" href="#"
+              <div class="products-section__item-link">
+                <a class="link" href="#"
                 >Купить в 1 клик</a
-              >
+                >
+              </div>
             </div>
           </li>
-          <li class="popular-goods__item">
-            <div class="popular-goods__item-thumb">
-              <ul class="list popular-goods__item-thumb-list">
-                <li class="popular-goods__item-thumb-item">Хит продаж</li>
-                <li class="popular-goods__item-thumb-item">Распродажа</li>
-                <li class="popular-goods__item-thumb-item">Новинка</li>
-                <li class="popular-goods__item-thumb-item">Акции</li>
-                <li class="popular-goods__item-thumb-item">%</li>
-              </ul>
-              <img src="./images/catalogue/item-5.png" alt="Шуруповёрт" />
-              <div class="popular-goods__item-thumb-svg-container">
-                <svg class="img popular-goods__svg" width="17" height="17">
-                  <use href="./icons/sprite.svg#icon-diagram"></use>
-                </svg>
-                <svg class="img popular-goods__svg" width="18" height="15">
-                  <use href="./icons/sprite.svg#icon-heart"></use>
-                </svg>
-              </div>
-            </div>
+            <li class="products-section__item">
+                <ul class="list products-section__item-thumb-list">
+                    <li class="products-section__item-thumb-item">Хит продаж</li>
+                    <li class="products-section__item-thumb-item">Распродажа</li>
+                    <li class="products-section__item-thumb-item">Новинка</li>
+                </ul>
+                <div class="products-section__item-header">
+                    <div class="products-section__item-thumb">
+                        <img src="./images/catalogue/item-5.png" alt="Шуруповёрт" />
+                        <div class="products-section__item-thumb-svg-container">
+                            <svg class="img products-section__svg" width="17" height="17">
+                                <use href="./icons/sprite.svg#icon-diagram"></use>
+                            </svg>
+                            <svg class="img products-section__svg" width="18" height="15">
+                                <use href="./icons/sprite.svg#icon-heart"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="popular-goods__item-content">
-              <span class="popular-goods__article">арт. 0000003</span>
-              <span
-                class="
-                  popular-goods__availability
-                  popular-goods__availability--available
+                <div class="products-section__item-content">
+                    <div class="products-section__item-content--header">
+                        <span class="products-section__article">арт. 0000003</span>
+                        <span
+                                class="
+                  products-section__availability
+                  products-section__availability--available
                 "
-                >в наличии</span
-              >
-              <div
-                class="
-                  popular-goods__svg-container
-                  popular-goods__svg-container--four
+                        >в наличии</span
+                        >
+                    </div>
+                    <div
+                            class="
+                  products-section__svg-container
+                  products-section__svg-container--four
                 "
-              >
-                <svg class="img popular-goods__svg" width="14" height="14">
-                  <use href="./icons/sprite.svg#icon-star"></use>
-                </svg>
-                <svg class="img popular-goods__svg" width="14" height="14">
-                  <use href="./icons/sprite.svg#icon-star"></use>
-                </svg>
-                <svg class="img popular-goods__svg" width="14" height="14">
-                  <use href="./icons/sprite.svg#icon-star"></use>
-                </svg>
-                <svg class="img popular-goods__svg" width="14" height="14">
-                  <use href="./icons/sprite.svg#icon-star"></use>
-                </svg>
-                <svg class="img popular-goods__svg" width="14" height="14">
-                  <use href="./icons/sprite.svg#icon-star"></use>
-                </svg>
-              </div>
-              <span class="popular-goods__text">
+                    >
+                        <svg class="img products-section__svg" width="14" height="14">
+                            <use href="./icons/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="img products-section__svg" width="14" height="14">
+                            <use href="./icons/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="img products-section__svg" width="14" height="14">
+                            <use href="./icons/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="img products-section__svg" width="14" height="14">
+                            <use href="./icons/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="img products-section__svg" width="14" height="14">
+                            <use href="./icons/sprite.svg#icon-star"></use>
+                        </svg>
+                    </div>
+                    <span class="products-section__text">
                 Ультра-легкие открытые очки с янтарными линзами из поликарбоната
                 HONEYWELL
               </span>
-              <div class="popular-goods__price-container">
-                <span class="popular-goods__price-text">цена</span>
-                <span class="popular-goods__old-price">35 000 руб.</span>
-                <span class="popular-goods__new-price">33 000 руб.</span>
+                    <div class="products-section__price-container">
+                        <div class="products-section__price-text">цена</div>
+                        <div class="products-section__price-values">
+                            <span class="products-section__new-price">33 000 руб.</span>
+                        </div>
+                    </div>
+                    <button class="button button--transparent-red products-section__item-button"
+                            type="button">
+                        <svg class="img products-section__item-svg" width="25" height="24">
+                            <use href="./icons/sprite.svg#icon-trolley"></use>
+                        </svg>
+                        В корзину
+                    </button>
+                    <div class="products-section__item-link">
+                        <a class="link" href="#"
+                        >Купить в 1 клик</a
+                        >
+                    </div>
+                </div>
+            </li>
+            <li class="products-section__item">
+                <ul class="list products-section__item-thumb-list">
+                    <li class="products-section__item-thumb-item">Хит продаж</li>
+                </ul>
+                <div class="products-section__item-header">
+                    <div class="products-section__item-thumb">
+                        <img src="./images/catalogue/item-5.png" alt="Шуруповёрт" />
+                        <div class="products-section__item-thumb-svg-container">
+                            <svg class="img products-section__svg" width="17" height="17">
+                                <use href="./icons/sprite.svg#icon-diagram"></use>
+                            </svg>
+                            <svg class="img products-section__svg" width="18" height="15">
+                                <use href="./icons/sprite.svg#icon-heart"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-section__item-content">
+                    <div class="products-section__item-content--header">
+                        <span class="products-section__article">арт. 0000003</span>
+                        <span
+                                class="
+                  products-section__availability
+                  products-section__availability--available
+                "
+                        >в наличии</span
+                        >
+                    </div>
+                    <div
+                            class="
+                  products-section__svg-container
+                  products-section__svg-container--four
+                "
+                    >
+                        <svg class="img products-section__svg" width="14" height="14">
+                            <use href="./icons/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="img products-section__svg" width="14" height="14">
+                            <use href="./icons/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="img products-section__svg" width="14" height="14">
+                            <use href="./icons/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="img products-section__svg" width="14" height="14">
+                            <use href="./icons/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="img products-section__svg" width="14" height="14">
+                            <use href="./icons/sprite.svg#icon-star"></use>
+                        </svg>
+                    </div>
+                    <span class="products-section__text">
+                Ультра-легкие открытые очки с янтарными линзами из поликарбоната
+                HONEYWELL
+              </span>
+                    <div class="products-section__price-container">
+                        <div class="products-section__price-text">цена</div>
+                        <div class="products-section__price-values">
+                            <span class="products-section__new-price">33 000 руб.</span>
+                        </div>
+                    </div>
+                    <button class="button button--transparent-red products-section__item-button"
+                            type="button">
+                        <svg class="img products-section__item-svg" width="25" height="24">
+                            <use href="./icons/sprite.svg#icon-trolley"></use>
+                        </svg>
+                        В корзину
+                    </button>
+                    <div class="products-section__item-link">
+                        <a class="link" href="#"
+                        >Купить в 1 клик</a
+                        >
+                    </div>
+                </div>
+            </li>
+            <li class="products-section__item">
+                <ul class="list products-section__item-thumb-list">
+                    <li class="products-section__item-thumb-item">Хит продаж</li>
+                </ul>
+                <div class="products-section__item-header">
+                    <div class="products-section__item-thumb">
+                        <img src="./images/catalogue/item-5.png" alt="Шуруповёрт" />
+                        <div class="products-section__item-thumb-svg-container">
+                            <svg class="img products-section__svg" width="17" height="17">
+                                <use href="./icons/sprite.svg#icon-diagram"></use>
+                            </svg>
+                            <svg class="img products-section__svg" width="18" height="15">
+                                <use href="./icons/sprite.svg#icon-heart"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-section__item-content">
+                    <div class="products-section__item-content--header">
+                        <span class="products-section__article">арт. 0000003</span>
+                        <span
+                                class="
+                  products-section__availability
+                  products-section__availability--available
+                "
+                        >в наличии</span
+                        >
+                    </div>
+                    <div
+                            class="
+                  products-section__svg-container
+                  products-section__svg-container--four
+                "
+                    >
+                        <svg class="img products-section__svg" width="14" height="14">
+                            <use href="./icons/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="img products-section__svg" width="14" height="14">
+                            <use href="./icons/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="img products-section__svg" width="14" height="14">
+                            <use href="./icons/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="img products-section__svg" width="14" height="14">
+                            <use href="./icons/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="img products-section__svg" width="14" height="14">
+                            <use href="./icons/sprite.svg#icon-star"></use>
+                        </svg>
+                    </div>
+                    <span class="products-section__text">
+                Ультра-легкие открытые очки с янтарными линзами из поликарбоната
+                HONEYWELL
+              </span>
+                    <div class="products-section__price-container">
+                        <div class="products-section__price-text">цена</div>
+                        <div class="products-section__price-values">
+                            <span class="products-section__new-price">33 000 руб.</span>
+                        </div>
+                    </div>
+                    <button class="button button--transparent-red products-section__item-button"
+                            type="button">
+                        <svg class="img products-section__item-svg" width="25" height="24">
+                            <use href="./icons/sprite.svg#icon-trolley"></use>
+                        </svg>
+                        В корзину
+                    </button>
+                    <div class="products-section__item-link">
+                        <a class="link" href="#"
+                        >Купить в 1 клик</a
+                        >
+                    </div>
+                </div>
+            </li>
+        </ul>
+          <div class="products-section__main-link">
+              <a class="link products-section__main-link" href="#">Смотреть все</a>
+          </div>
+      </div>
+    </section>
+
+    <!--* Сloseout Section -->
+    <section class="section products-section closeout">
+        <div class="container products-section__container">
+            <div class="products-section__title-container">
+                <h2 class="title products-section__title">Распродажа</h2>
+                <button
+                        class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--prev
+            "
+                        type="button"
+                >
+                    <svg class="img products-section__button-svg" width="10" height="16">
+                        <use href="./icons/sprite.svg#icon-arrow"></use>
+                    </svg>
+                </button>
+                <button
+                        class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--next
+            "
+                        type="button"
+                >
+                    <svg class="img products-section__button-svg" width="10" height="16">
+                        <use href="./icons/sprite.svg#icon-arrow"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <ul class="list products-section__list">
+                <li class="products-section__item">
+                    <ul class="list products-section__item-thumb-list">
+                        <li class="products-section__item-thumb-item">Хит продаж</li>
+                        <li class="products-section__item-thumb-item">Распродажа</li>
+                        <li class="products-section__item-thumb-item">Новинка</li>
+                        <li class="products-section__item-thumb-item">Акции</li>
+                        <li class="products-section__item-thumb-item">%</li>
+                    </ul>
+                    <div class="products-section__item-header">
+                        <div class="products-section__item-thumb">
+                            <img src="./images/catalogue/item-16.png" alt="Шуруповёрт" />
+                            <div class="products-section__item-thumb-svg-container">
+                                <svg class="img products-section__svg" width="17" height="17">
+                                    <use href="./icons/sprite.svg#icon-diagram"></use>
+                                </svg>
+                                <svg class="img products-section__svg liked" width="18" height="15">
+                                    <use href="./icons/sprite.svg#icon-heart"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products-section__item-content">
+                        <div class="products-section__item-content--header">
+                            <span class="products-section__article">арт. 0000003</span>
+                            <span class="
+                                  products-section__availability
+                                  products-section__availability--not-available
+                                "
+                            >
+                                нет в наличии
+                            </span>
+                        </div>
+                        <div
+                                class="
+                  products-section__svg-container
+                  products-section__svg-container--four
+                "
+                        >
+                            <svg class="img products-section__svg" width="14" height="14">
+                                <use href="./icons/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="img products-section__svg" width="14" height="14">
+                                <use href="./icons/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="img products-section__svg" width="14" height="14">
+                                <use href="./icons/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="img products-section__svg" width="14" height="14">
+                                <use href="./icons/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="img products-section__svg" width="14" height="14">
+                                <use href="./icons/sprite.svg#icon-star"></use>
+                            </svg>
+                        </div>
+                        <span class="products-section__text">
+                Ультра-легкие открытые очки с янтарными линзами из поликарбоната
+                HONEYWELL
+              </span>
+                        <div class="products-section__price-container">
+                            <div class="products-section__price-text">цена</div>
+                            <div class="products-section__price-values">
+                                <span class="products-section__old-price old-price">35 000 руб.</span>
+                                <span class="products-section__new-price">33 000 руб.</span>
+                            </div>
+                        </div>
+                        <button class="button button--transparent-red products-section__item-button"
+                                type="button">
+                            Подобрать аналог
+                        </button>
+                        <div class="products-section__item-link">
+                            <a class="link" href="#"
+                            >Сообщить о поступлении</a
+                            >
+                        </div>
+                    </div>
+                </li>
+                <li class="products-section__item">
+                    <ul class="list products-section__item-thumb-list">
+                        <li class="products-section__item-thumb-item">Хит продаж</li>
+                        <li class="products-section__item-thumb-item">Распродажа</li>
+                        <li class="products-section__item-thumb-item">Новинка</li>
+                    </ul>
+                    <div class="products-section__item-header">
+                        <div class="products-section__item-thumb">
+                            <img src="./images/catalogue/item-5.png" alt="Шуруповёрт" />
+                            <div class="products-section__item-thumb-svg-container">
+                                <svg class="img products-section__svg" width="17" height="17">
+                                    <use href="./icons/sprite.svg#icon-diagram"></use>
+                                </svg>
+                                <svg class="img products-section__svg" width="18" height="15">
+                                    <use href="./icons/sprite.svg#icon-heart"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products-section__item-content">
+                        <div class="products-section__item-content--header">
+                            <span class="products-section__article">арт. 0000003</span>
+                            <span
+                                    class="
+                  products-section__availability
+                  products-section__availability--under-the-order
+                "
+                            >под заказ</span
+                            >
+                        </div>
+                        <div
+                                class="
+                  products-section__svg-container
+                  products-section__svg-container--four
+                "
+                        >
+                            <svg class="img products-section__svg" width="14" height="14">
+                                <use href="./icons/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="img products-section__svg" width="14" height="14">
+                                <use href="./icons/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="img products-section__svg" width="14" height="14">
+                                <use href="./icons/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="img products-section__svg" width="14" height="14">
+                                <use href="./icons/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="img products-section__svg" width="14" height="14">
+                                <use href="./icons/sprite.svg#icon-star"></use>
+                            </svg>
+                        </div>
+                        <span class="products-section__text">
+                Ультра-легкие открытые очки с янтарными линзами из поликарбоната
+                HONEYWELL
+              </span>
+                        <div class="products-section__price-container">
+                            <div class="products-section__price-text">цена</div>
+                            <div class="products-section__price-values">
+                                <span class="products-section__new-price">33 000 руб.</span>
+                            </div>
+                        </div>
+                        <button class="button button--transparent-red products-section__item-button"
+                                type="button">
+                            Подобрать аналог
+                        </button>
+                        <div class="products-section__item-link">
+                            <a class="link" href="#"
+                            >Заказать</a
+                            >
+                        </div>
+                    </div>
+                </li>
+                <li class="products-section__item">
+                    <ul class="list products-section__item-thumb-list">
+                        <li class="products-section__item-thumb-item">Хит продаж</li>
+                    </ul>
+                    <div class="products-section__item-header">
+                        <div class="products-section__item-thumb">
+                            <img src="./images/catalogue/item-5.png" alt="Шуруповёрт" />
+                            <div class="products-section__item-thumb-svg-container">
+                                <svg class="img products-section__svg" width="17" height="17">
+                                    <use href="./icons/sprite.svg#icon-diagram"></use>
+                                </svg>
+                                <svg class="img products-section__svg" width="18" height="15">
+                                    <use href="./icons/sprite.svg#icon-heart"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products-section__item-content">
+                        <div class="products-section__item-content--header">
+                            <span class="products-section__article">арт. 0000003</span>
+                            <span
+                                    class="
+                  products-section__availability
+                  products-section__availability--available
+                "
+                            >в наличии</span
+                            >
+                        </div>
+                        <div
+                                class="
+                  products-section__svg-container
+                  products-section__svg-container--four
+                "
+                        >
+                            <svg class="img products-section__svg" width="14" height="14">
+                                <use href="./icons/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="img products-section__svg" width="14" height="14">
+                                <use href="./icons/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="img products-section__svg" width="14" height="14">
+                                <use href="./icons/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="img products-section__svg" width="14" height="14">
+                                <use href="./icons/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="img products-section__svg" width="14" height="14">
+                                <use href="./icons/sprite.svg#icon-star"></use>
+                            </svg>
+                        </div>
+                        <span class="products-section__text">
+                Ультра-легкие открытые очки с янтарными линзами из поликарбоната
+                HONEYWELL
+              </span>
+                        <div class="products-section__price-container">
+                            <div class="products-section__price-text">цена</div>
+                            <div class="products-section__price-values">
+                                <span class="products-section__new-price">33 000 руб.</span>
+                            </div>
+                        </div>
+                      <div class="products-section__in-cart-block">
+                        <button class="button button--green"
+                                type="button">
+                          В корзине
+                        </button>
+                        <div class="products-section__products-count">
+                          <span class="button button-products button-products-count-down"></span>
+                          <span class="products-section__products-count-value">20</span>
+                          <span class="button button-products button-products-count-up"></span>
+                        </div>
+                      </div>
+                      <div class="products-section__item-link">
+                        <a class="link" href="#"
+                        >Купить в 1 клик</a
+                        >
+                      </div>
+                    </div>
+                </li>
+                <li class="products-section__item">
+                    <ul class="list products-section__item-thumb-list">
+                        <li class="products-section__item-thumb-item">Хит продаж</li>
+                    </ul>
+                    <div class="products-section__item-header">
+                        <div class="products-section__item-thumb">
+                            <img src="./images/catalogue/item-5.png" alt="Шуруповёрт" />
+                            <div class="products-section__item-thumb-svg-container">
+                                <svg class="img products-section__svg" width="17" height="17">
+                                    <use href="./icons/sprite.svg#icon-diagram"></use>
+                                </svg>
+                                <svg class="img products-section__svg" width="18" height="15">
+                                    <use href="./icons/sprite.svg#icon-heart"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products-section__item-content">
+                        <div class="products-section__item-content--header">
+                            <span class="products-section__article">арт. 0000003</span>
+                            <span
+                                    class="
+                  products-section__availability
+                  products-section__availability--available
+                "
+                            >в наличии</span
+                            >
+                        </div>
+                        <div
+                                class="
+                  products-section__svg-container
+                  products-section__svg-container--four
+                "
+                        >
+                            <svg class="img products-section__svg" width="14" height="14">
+                                <use href="./icons/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="img products-section__svg" width="14" height="14">
+                                <use href="./icons/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="img products-section__svg" width="14" height="14">
+                                <use href="./icons/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="img products-section__svg" width="14" height="14">
+                                <use href="./icons/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="img products-section__svg" width="14" height="14">
+                                <use href="./icons/sprite.svg#icon-star"></use>
+                            </svg>
+                        </div>
+                        <span class="products-section__text">
+                Ультра-легкие открытые очки с янтарными линзами из поликарбоната
+                HONEYWELL
+              </span>
+                        <div class="products-section__price-container">
+                            <div class="products-section__price-text">цена</div>
+                            <div class="products-section__price-values">
+                                <span class="products-section__new-price">33 000 руб.</span>
+                            </div>
+                        </div>
+                      <div class="products-section__in-cart-block">
+                        <button class="button button--green"
+                                type="button">
+                          В корзине
+                        </button>
+                        <div class="products-section__products-count">
+                          <span class="button button-products button-products-count-down"></span>
+                          <span class="products-section__products-count-value">20</span>
+                          <span class="button button-products button-products-count-up"></span>
+                        </div>
+                      </div>
+                        <div class="products-section__item-link">
+                            <a class="link" href="#"
+                            >Купить в 1 клик</a
+                            >
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="products-section__main-link">
+                <a class="link products-section__main-link" href="#">Смотреть все</a>
+            </div>
+        </div>
+      <div class="modal">
+        <div class="added-to-cart">
+          <div class="added-to-cart__close-modal">
+            <span></span>
+          </div>
+          <div class="added-to-cart__content">
+            <div class="title added-to-cart__title">
+              Товар добавлен в корзину
+            </div>
+            <div class="added-to-cart__img">
+              <img src="./images/catalogue/item-5.png" alt="Шуруповёрт" />
+            </div>
+            <div class="added-to-cart__text">
+              Ультра-легкие открытые очки с янтарными линзами из поликарбоната HONEYWELL
+            </div>
+            <button class="button button--green products-section__item-button"
+                    type="button">
+              <svg class="img products-section__item-svg" width="25" height="24">
+                <use href="./icons/sprite.svg#icon-trolley"></use>
+              </svg>
+              В корзину
+            </button>
+            <button class="button button--transparent-red products-section__item-button"
+                    type="button">
+              Продолжить покупки
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--* New in shop Section -->
+    <section class="section products-section popular-goods">
+      <div class="container products-section__container">
+        <div class="products-section__title-container">
+          <h2 class="title products-section__title">Новинки</h2>
+          <button
+                  class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--prev
+            "
+                  type="button"
+          >
+            <svg class="img products-section__button-svg" width="10" height="16">
+              <use href="./icons/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <button
+                  class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--next
+            "
+                  type="button"
+          >
+            <svg class="img products-section__button-svg" width="10" height="16">
+              <use href="./icons/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
+
+        <ul class="list products-section__list">
+          <li class="products-section__item">
+            <ul class="list products-section__item-thumb-list">
+              <li class="products-section__item-thumb-item">Хит продаж</li>
+              <li class="products-section__item-thumb-item">Распродажа</li>
+              <li class="products-section__item-thumb-item">Новинка</li>
+              <li class="products-section__item-thumb-item">Акции</li>
+              <li class="products-section__item-thumb-item">%</li>
+            </ul>
+            <div class="products-section__item-header">
+              <div class="products-section__item-thumb">
+                <img src="./images/catalogue/item-16.png" alt="Шуруповёрт" />
+                <div class="products-section__item-thumb-svg-container">
+                  <svg class="img products-section__svg" width="17" height="17">
+                    <use href="./icons/sprite.svg#icon-diagram"></use>
+                  </svg>
+                  <svg class="img products-section__svg liked" width="18" height="15">
+                    <use href="./icons/sprite.svg#icon-heart"></use>
+                  </svg>
+                </div>
               </div>
-              <button class="popular-goods__item-button" type="button">
-                <svg class="img popular-goods__item-svg" width="25" height="24">
+            </div>
+
+            <div class="products-section__item-content">
+              <div class="products-section__item-content--header">
+                <span class="products-section__article">арт. 0000003</span>
+                <span
+                        class="
+                  products-section__availability
+                  products-section__availability--available
+                "
+                >в наличии</span
+                >
+              </div>
+              <div
+                      class="
+                  products-section__svg-container
+                  products-section__svg-container--four
+                "
+              >
+                <svg class="img products-section__svg" width="14" height="14">
+                  <use href="./icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="img products-section__svg" width="14" height="14">
+                  <use href="./icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="img products-section__svg" width="14" height="14">
+                  <use href="./icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="img products-section__svg" width="14" height="14">
+                  <use href="./icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="img products-section__svg" width="14" height="14">
+                  <use href="./icons/sprite.svg#icon-star"></use>
+                </svg>
+              </div>
+              <span class="products-section__text">
+                Ультра-легкие открытые очки с янтарными линзами из поликарбоната
+                HONEYWELL
+              </span>
+              <div class="products-section__price-container">
+                <div class="products-section__price-text">цена</div>
+                <div class="products-section__price-values">
+                  <span class="products-section__old-price old-price">35 000 руб.</span>
+                  <span class="products-section__new-price">33 000 руб.</span>
+                </div>
+              </div>
+              <button class="button button--transparent-red products-section__item-button"
+                      type="button">
+                <svg class="img products-section__item-svg" width="25" height="24">
                   <use href="./icons/sprite.svg#icon-trolley"></use>
                 </svg>
                 В корзину
               </button>
-              <a class="link popular-goods__item-link" href="#"
+              <div class="products-section__item-link">
+                <a class="link" href="#"
                 >Купить в 1 клик</a
-              >
+                >
+              </div>
             </div>
           </li>
-          <li class="popular-goods__item">
-            <div class="popular-goods__item-thumb">
-              <ul class="list popular-goods__item-thumb-list">
-                <li class="popular-goods__item-thumb-item">Хит продаж</li>
-                <li class="popular-goods__item-thumb-item">Распродажа</li>
-                <li class="popular-goods__item-thumb-item">Новинка</li>
-                <li class="popular-goods__item-thumb-item">Акции</li>
-                <li class="popular-goods__item-thumb-item">%</li>
-              </ul>
-              <img src="./images/catalogue/item-5.png" alt="Шуруповёрт" />
-              <div class="popular-goods__item-thumb-svg-container">
-                <svg class="img popular-goods__svg" width="17" height="17">
-                  <use href="./icons/sprite.svg#icon-diagram"></use>
-                </svg>
-                <svg class="img popular-goods__svg" width="18" height="15">
-                  <use href="./icons/sprite.svg#icon-heart"></use>
-                </svg>
+          <li class="products-section__item">
+            <ul class="list products-section__item-thumb-list">
+              <li class="products-section__item-thumb-item">Хит продаж</li>
+              <li class="products-section__item-thumb-item">Распродажа</li>
+              <li class="products-section__item-thumb-item">Новинка</li>
+            </ul>
+            <div class="products-section__item-header">
+              <div class="products-section__item-thumb">
+                <img src="./images/catalogue/item-5.png" alt="Шуруповёрт" />
+                <div class="products-section__item-thumb-svg-container">
+                  <svg class="img products-section__svg" width="17" height="17">
+                    <use href="./icons/sprite.svg#icon-diagram"></use>
+                  </svg>
+                  <svg class="img products-section__svg" width="18" height="15">
+                    <use href="./icons/sprite.svg#icon-heart"></use>
+                  </svg>
+                </div>
               </div>
             </div>
 
-            <div class="popular-goods__item-content">
-              <span class="popular-goods__article">арт. 0000003</span>
-              <span
-                class="
-                  popular-goods__availability
-                  popular-goods__availability--available
+            <div class="products-section__item-content">
+              <div class="products-section__item-content--header">
+                <span class="products-section__article">арт. 0000003</span>
+                <span
+                        class="
+                  products-section__availability
+                  products-section__availability--available
                 "
                 >в наличии</span
-              >
+                >
+              </div>
               <div
-                class="
-                  popular-goods__svg-container
-                  popular-goods__svg-container--four
+                      class="
+                  products-section__svg-container
+                  products-section__svg-container--four
                 "
               >
-                <svg class="img popular-goods__svg" width="14" height="14">
+                <svg class="img products-section__svg" width="14" height="14">
                   <use href="./icons/sprite.svg#icon-star"></use>
                 </svg>
-                <svg class="img popular-goods__svg" width="14" height="14">
+                <svg class="img products-section__svg" width="14" height="14">
                   <use href="./icons/sprite.svg#icon-star"></use>
                 </svg>
-                <svg class="img popular-goods__svg" width="14" height="14">
+                <svg class="img products-section__svg" width="14" height="14">
                   <use href="./icons/sprite.svg#icon-star"></use>
                 </svg>
-                <svg class="img popular-goods__svg" width="14" height="14">
+                <svg class="img products-section__svg" width="14" height="14">
                   <use href="./icons/sprite.svg#icon-star"></use>
                 </svg>
-                <svg class="img popular-goods__svg" width="14" height="14">
+                <svg class="img products-section__svg" width="14" height="14">
                   <use href="./icons/sprite.svg#icon-star"></use>
                 </svg>
               </div>
-              <span class="popular-goods__text">
+              <span class="products-section__text">
                 Ультра-легкие открытые очки с янтарными линзами из поликарбоната
                 HONEYWELL
               </span>
-              <div class="popular-goods__price-container">
-                <span class="popular-goods__price-text">цена</span>
-                <span class="popular-goods__old-price">35 000 руб.</span>
-                <span class="popular-goods__new-price">33 000 руб.</span>
+              <div class="products-section__price-container">
+                <div class="products-section__price-text">цена</div>
+                <div class="products-section__price-values">
+                  <span class="products-section__new-price">33 000 руб.</span>
+                </div>
               </div>
-              <button class="popular-goods__item-button" type="button">
-                <svg class="img popular-goods__item-svg" width="25" height="24">
+              <button class="button button--transparent-red products-section__item-button"
+                      type="button">
+                <svg class="img products-section__item-svg" width="25" height="24">
                   <use href="./icons/sprite.svg#icon-trolley"></use>
                 </svg>
                 В корзину
               </button>
-              <a class="link popular-goods__item-link" href="#"
+              <div class="products-section__item-link">
+                <a class="link" href="#"
                 >Купить в 1 клик</a
-              >
+                >
+              </div>
             </div>
           </li>
-          <li class="popular-goods__item">
-            <div class="popular-goods__item-thumb">
-              <ul class="list popular-goods__item-thumb-list">
-                <li class="popular-goods__item-thumb-item">Хит продаж</li>
-                <li class="popular-goods__item-thumb-item">Распродажа</li>
-                <li class="popular-goods__item-thumb-item">Новинка</li>
-                <li class="popular-goods__item-thumb-item">Акции</li>
-                <li class="popular-goods__item-thumb-item">%</li>
-              </ul>
-              <img src="./images/catalogue/item-5.png" alt="Шуруповёрт" />
-              <div class="popular-goods__item-thumb-svg-container">
-                <svg class="img popular-goods__svg" width="17" height="17">
-                  <use href="./icons/sprite.svg#icon-diagram"></use>
-                </svg>
-                <svg class="img popular-goods__svg" width="18" height="15">
-                  <use href="./icons/sprite.svg#icon-heart"></use>
-                </svg>
+          <li class="products-section__item">
+            <ul class="list products-section__item-thumb-list">
+              <li class="products-section__item-thumb-item">Хит продаж</li>
+            </ul>
+            <div class="products-section__item-header">
+              <div class="products-section__item-thumb">
+                <img src="./images/catalogue/item-5.png" alt="Шуруповёрт" />
+                <div class="products-section__item-thumb-svg-container">
+                  <svg class="img products-section__svg" width="17" height="17">
+                    <use href="./icons/sprite.svg#icon-diagram"></use>
+                  </svg>
+                  <svg class="img products-section__svg" width="18" height="15">
+                    <use href="./icons/sprite.svg#icon-heart"></use>
+                  </svg>
+                </div>
               </div>
             </div>
 
-            <div class="popular-goods__item-content">
-              <span class="popular-goods__article">арт. 0000003</span>
-              <span
-                class="
-                  popular-goods__availability
-                  popular-goods__availability--available
+            <div class="products-section__item-content">
+              <div class="products-section__item-content--header">
+                <span class="products-section__article">арт. 0000003</span>
+                <span
+                        class="
+                  products-section__availability
+                  products-section__availability--available
                 "
                 >в наличии</span
-              >
+                >
+              </div>
               <div
-                class="
-                  popular-goods__svg-container
-                  popular-goods__svg-container--four
+                      class="
+                  products-section__svg-container
+                  products-section__svg-container--four
                 "
               >
-                <svg class="img popular-goods__svg" width="14" height="14">
+                <svg class="img products-section__svg" width="14" height="14">
                   <use href="./icons/sprite.svg#icon-star"></use>
                 </svg>
-                <svg class="img popular-goods__svg" width="14" height="14">
+                <svg class="img products-section__svg" width="14" height="14">
                   <use href="./icons/sprite.svg#icon-star"></use>
                 </svg>
-                <svg class="img popular-goods__svg" width="14" height="14">
+                <svg class="img products-section__svg" width="14" height="14">
                   <use href="./icons/sprite.svg#icon-star"></use>
                 </svg>
-                <svg class="img popular-goods__svg" width="14" height="14">
+                <svg class="img products-section__svg" width="14" height="14">
                   <use href="./icons/sprite.svg#icon-star"></use>
                 </svg>
-                <svg class="img popular-goods__svg" width="14" height="14">
+                <svg class="img products-section__svg" width="14" height="14">
                   <use href="./icons/sprite.svg#icon-star"></use>
                 </svg>
               </div>
-              <span class="popular-goods__text">
+              <span class="products-section__text">
                 Ультра-легкие открытые очки с янтарными линзами из поликарбоната
                 HONEYWELL
               </span>
-              <div class="popular-goods__price-container">
-                <span class="popular-goods__price-text">цена</span>
-                <span class="popular-goods__old-price">35 000 руб.</span>
-                <span class="popular-goods__new-price">33 000 руб.</span>
+              <div class="products-section__price-container">
+                <div class="products-section__price-text">цена</div>
+                <div class="products-section__price-values">
+                  <span class="products-section__new-price">33 000 руб.</span>
+                </div>
               </div>
-              <button class="popular-goods__item-button" type="button">
-                <svg class="img popular-goods__item-svg" width="25" height="24">
+              <button class="button button--transparent-red products-section__item-button"
+                      type="button">
+                <svg class="img products-section__item-svg" width="25" height="24">
                   <use href="./icons/sprite.svg#icon-trolley"></use>
                 </svg>
                 В корзину
               </button>
-              <a class="link popular-goods__item-link" href="#"
+              <div class="products-section__item-link">
+                <a class="link" href="#"
                 >Купить в 1 клик</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="products-section__item">
+            <ul class="list products-section__item-thumb-list">
+              <li class="products-section__item-thumb-item">Хит продаж</li>
+            </ul>
+            <div class="products-section__item-header">
+              <div class="products-section__item-thumb">
+                <img src="./images/catalogue/item-5.png" alt="Шуруповёрт" />
+                <div class="products-section__item-thumb-svg-container">
+                  <svg class="img products-section__svg" width="17" height="17">
+                    <use href="./icons/sprite.svg#icon-diagram"></use>
+                  </svg>
+                  <svg class="img products-section__svg" width="18" height="15">
+                    <use href="./icons/sprite.svg#icon-heart"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="products-section__item-content">
+              <div class="products-section__item-content--header">
+                <span class="products-section__article">арт. 0000003</span>
+                <span
+                        class="
+                  products-section__availability
+                  products-section__availability--available
+                "
+                >в наличии</span
+                >
+              </div>
+              <div
+                      class="
+                  products-section__svg-container
+                  products-section__svg-container--four
+                "
               >
+                <svg class="img products-section__svg" width="14" height="14">
+                  <use href="./icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="img products-section__svg" width="14" height="14">
+                  <use href="./icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="img products-section__svg" width="14" height="14">
+                  <use href="./icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="img products-section__svg" width="14" height="14">
+                  <use href="./icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="img products-section__svg" width="14" height="14">
+                  <use href="./icons/sprite.svg#icon-star"></use>
+                </svg>
+              </div>
+              <span class="products-section__text">
+                Ультра-легкие открытые очки с янтарными линзами из поликарбоната
+                HONEYWELL
+              </span>
+              <div class="products-section__price-container">
+                <div class="products-section__price-text">цена</div>
+                <div class="products-section__price-values">
+                  <span class="products-section__new-price">33 000 руб.</span>
+                </div>
+              </div>
+              <button class="button button--transparent-red products-section__item-button"
+                      type="button">
+                <svg class="img products-section__item-svg" width="25" height="24">
+                  <use href="./icons/sprite.svg#icon-trolley"></use>
+                </svg>
+                В корзину
+              </button>
+              <div class="products-section__item-link">
+                <a class="link" href="#"
+                >Купить в 1 клик</a
+                >
+              </div>
             </div>
           </li>
         </ul>
+        <div class="products-section__main-link">
+          <a class="link products-section__main-link" href="#">Смотреть все</a>
+        </div>
+      </div>
+    </section>
 
-        <a class="link popular-goods__main-link" href="#">Все акции</a>
+    <!--* How Section -->
+    <section class="section how-section">
+      <div class="container how-section__container">
+        <div class="how-section__how-pay">
+          <h2 class="title">
+            Как оплатить товар
+          </h2>
+          <ul class="how-section__list">
+            <li class="how-section__list-item">
+              <span class="list-item--icon">
+                <svg class="img promotions__button-svg" width="25" height="25">
+                  <use href="./icons/sprite.svg#icon-wallet-2"></use>
+                </svg>
+              </span>
+              <span>
+                Наличными или картой при получении заказа
+              </span>
+            </li>
+            <li class="how-section__list-item">
+              <span class="list-item--icon">
+                <svg class="img promotions__button-svg" width="25" height="25">
+                  <use href="./icons/sprite.svg#icon-cards"></use>
+                </svg>
+              </span>
+              <span>
+                Картой при оформлении заказа на сайте
+              </span>
+            </li>
+            <li class="how-section__list-item">
+              <span class="list-item--icon">
+                <svg class="img promotions__button-svg" width="25" height="25">
+                  <use href="./icons/sprite.svg#icon-receipt"></use>
+                </svg>
+              </span>
+              <span>
+                Безналичная оплата для юр. лиц и ИП
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="how-section__line"></div>
+        <div class="how-section__how-receive">
+          <h2 class="title">
+            Как получить товар
+          </h2>
+          <ul class="how-section__list">
+            <li class="how-section__list-item">
+              <span class="list-item--icon">
+                <svg class="img promotions__button-svg" width="25" height="25">
+                  <use href="./icons/sprite.svg#icon-box"></use>
+                </svg>
+              </span>
+              <span>
+                Самовывоз из магазинов СтройБазар
+              </span>
+            </li>
+            <li class="how-section__list-item">
+              <span class="list-item--icon">
+                <svg class="img promotions__button-svg" width="25" height="25">
+                  <use href="./icons/sprite.svg#icon-courier"></use>
+                </svg>
+              </span>
+              <span>
+                Курьерская доставка по Москве и Московской области
+              </span>
+            </li>
+            <li class="how-section__list-item">
+              <span class="list-item--icon">
+                <svg class="img promotions__button-svg" width="25" height="25">
+                  <use href="./icons/sprite.svg#icon-truck-2"></use>
+                </svg>
+              </span>
+              <span>
+                Доставка транспортными компаниями
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--* Our shops Section -->
+<!--    <section class="our-shops">-->
+<!--      <img src="./images/index/map.png" alt="Карта магазинов">-->
+<!--      <div class="section our-shops__content">-->
+<!--        <div class="container our-shops__container">-->
+<!--          <div class="title our-shops__title">-->
+<!--            <span>-->
+<!--              Магазины СтройБазар на карте-->
+<!--            </span>-->
+<!--          </div>-->
+<!--          <div class="our-shops__map-point">-->
+<!--            <img src="./icons/map-point.svg" alt="Наш магазин на карте">-->
+<!--          </div>-->
+<!--          <div class="our-shops__map-point&#45;&#45;checked">-->
+<!--            <img src="./icons/map-point-checked.svg" alt="Наш магазин на карте">-->
+<!--            <div class="modal">-->
+<!--              <div class="our-shops__map-shop-info">-->
+<!--                <ul class="our-shops__map-list">-->
+<!--                  <li class="our-shops__map-list-item">-->
+<!--                    <svg class="img promotions__button-svg" width="20" height="20">-->
+<!--                      <use href="./icons/sprite.svg#icon-phone"></use>-->
+<!--                    </svg>-->
+<!--                    <div>-->
+<!--                      <div>-->
+<!--                        +7 (495) 215-17-78-->
+<!--                      </div>-->
+<!--                      <div>-->
+<!--                        8 (800) 555-08-74-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </li>-->
+<!--                  <li class="our-shops__map-list-item">-->
+<!--                    <svg class="img promotions__button-svg" width="20" height="20">-->
+<!--                      <use href="./icons/sprite.svg#icon-map"></use>-->
+<!--                    </svg>-->
+<!--                    <span>-->
+<!--                      Москва, Рязанский пр-т, 2 корпус, 3, ТК «Город»-->
+<!--                    </span>-->
+<!--                  </li>-->
+<!--                  <li class="our-shops__map-list-item">-->
+<!--                    <svg class="img promotions__button-svg" width="20" height="20">-->
+<!--                      <use href="./icons/sprite.svg#icon-mail"></use>-->
+<!--                    </svg>-->
+<!--                    <span>-->
+<!--                      info@stroybazar.ru-->
+<!--                    </span>-->
+<!--                  </li>-->
+<!--                  <li class="our-shops__map-list-item">-->
+<!--                    <svg class="img promotions__button-svg" width="20" height="20">-->
+<!--                      <use href="./icons/sprite.svg#icon-clock"></use>-->
+<!--                    </svg>-->
+<!--                    <span>-->
+<!--                      пн-вс 10:00 – 20:00-->
+<!--                    </span>-->
+<!--                  </li>-->
+<!--                  <li class="our-shops__map-list-item">-->
+<!--                    <svg class="img promotions__button-svg" width="20" height="20">-->
+<!--                      <use href="./icons/sprite.svg#icon-cards"></use>-->
+<!--                    </svg>-->
+<!--                    <span>-->
+<!--                      м. Нижегородская-->
+<!--                    </span>-->
+<!--                  </li>-->
+<!--                </ul>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
+
+    <!--*  Product Reviews Section -->
+    <section class="section product-reviews__section">
+      <div class="container product-reviews__container">
+        <div class="products-section__title-container">
+          <h2 class="title products-section__title">Отзывы о товарах</h2>
+          <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--prev
+            " type="button">
+            <svg class="img products-section__button-svg" width="10" height="16">
+              <use href="./icons/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--next
+            " type="button">
+            <svg class="img products-section__button-svg" width="10" height="16">
+              <use href="./icons/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="product-reviews__content-container">
+            <ul class="product-reviews__list">
+              <li class="product-reviews__list-item">
+                <div class="product-reviews__list-item--header">
+                  <div class="product-reviews__list-item--icon">
+                    <img src="./images/index/reviews/avatar-3.png" alt="аватар отзывы">
+                  </div>
+                  <div class="product-reviews__list-item--nickname">
+                    <div>
+                      Константиновский Игорь
+                    </div>
+                    <div class="
+                      products-section__svg-container
+                      products-section__svg-container--four
+                      ">
+                      <svg class="img products-section__svg" width="14" height="14">
+                        <use href="./icons/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="img products-section__svg" width="14" height="14">
+                        <use href="./icons/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="img products-section__svg" width="14" height="14">
+                        <use href="./icons/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="img products-section__svg" width="14" height="14">
+                        <use href="./icons/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="img products-section__svg" width="14" height="14">
+                        <use href="./icons/sprite.svg#icon-star"></use>
+                      </svg>
+                    </div
+                    >
+                  </div>
+                </div>
+                <div class="product-reviews__list-item--subtitle">
+                  отзыв о товаре
+                </div>
+                <div class="product-reviews__list-item--title">
+                  Лейка для душа BRADEX ПРИЛИВ СИЛ TD 0367
+                </div>
+                <div>
+                  В целом неплохая, была такая же с китая, но там режим массажа сильнее, здесь мягкий, а так неплохая, не считая, что немного на месте крепления шланга немного капает вода, но это устраняется кольцом.
+                </div>
+              </li>
+              <li class="product-reviews__list-item">
+                <div class="product-reviews__list-item--header">
+                  <div class="product-reviews__list-item--icon">
+                    <img src="./images/index/reviews/avatar-3.png" alt="аватар отзывы">
+                  </div>
+                  <div class="product-reviews__list-item--nickname">
+                    <div>
+                      Константиновский Игорь
+                    </div>
+                    <div class="
+                      products-section__svg-container
+                      products-section__svg-container--four
+                      ">
+                      <svg class="img products-section__svg" width="14" height="14">
+                        <use href="./icons/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="img products-section__svg" width="14" height="14">
+                        <use href="./icons/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="img products-section__svg" width="14" height="14">
+                        <use href="./icons/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="img products-section__svg" width="14" height="14">
+                        <use href="./icons/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="img products-section__svg" width="14" height="14">
+                        <use href="./icons/sprite.svg#icon-star"></use>
+                      </svg>
+                    </div
+                    >
+                  </div>
+                </div>
+                <div>
+                  отзыв о товаре
+                </div>
+                <div class="product-reviews__list-item--title">
+                  Лейка для душа BRADEX ПРИЛИВ СИЛ TD 0367
+                </div>
+                <div>
+                  В целом неплохая, была такая же с китая, но там режим массажа сильнее, здесь мягкий, а так неплохая, не считая, что немного на месте крепления шланга немного капает вода, но это устраняется кольцом.
+                </div>
+              </li>
+              <li class="product-reviews__list-item">
+                <div class="product-reviews__list-item--header">
+                  <div class="product-reviews__list-item--icon">
+                    <img src="./images/index/reviews/avatar-1.png" alt="аватар отзывы">
+                  </div>
+                  <div class="product-reviews__list-item--nickname">
+                    <div>
+                      Константиновский Игорь
+                    </div>
+                    <div class="
+                      products-section__svg-container
+                      products-section__svg-container--four
+                      ">
+                      <svg class="img products-section__svg" width="14" height="14">
+                        <use href="./icons/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="img products-section__svg" width="14" height="14">
+                        <use href="./icons/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="img products-section__svg" width="14" height="14">
+                        <use href="./icons/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="img products-section__svg" width="14" height="14">
+                        <use href="./icons/sprite.svg#icon-star"></use>
+                      </svg>
+                      <svg class="img products-section__svg" width="14" height="14">
+                        <use href="./icons/sprite.svg#icon-star"></use>
+                      </svg>
+                    </div
+                    >
+                  </div>
+                </div>
+                <div>
+                  отзыв о товаре
+                </div>
+                <div class="product-reviews__list-item--title">
+                  Лейка для душа BRADEX ПРИЛИВ СИЛ TD 0367
+                </div>
+                <div>
+                  В целом неплохая, была такая же с китая, но там режим массажа сильнее, здесь мягкий, а так неплохая, не считая, что немного на месте крепления шланга немного капает вода, но это устраняется кольцом.
+                </div>
+              </li>
+            </ul>
+        </div>
+        <div class="products-section__main-link">
+          <a class="link products-section__main-link" href="#">Смотреть все</a>
+        </div>
+      </div>
+    </section>
+
+    <!--*  Shop Reviews Section -->
+    <section class="section shop-reviews__section">
+      <div class="container shop-reviews__container">
+        <div class="products-section__title-container">
+          <h2 class="title products-section__title">Отзывы о товарах</h2>
+          <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--prev
+            " type="button">
+            <svg class="img products-section__button-svg" width="10" height="16">
+              <use href="./icons/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--next
+            " type="button">
+            <svg class="img products-section__button-svg" width="10" height="16">
+              <use href="./icons/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="shop-reviews__content-container">
+          <ul class="shop-reviews__list">
+            <li class="shop-reviews__list-item">
+              <div class="shop-reviews__list-item--header">
+                <div class="shop-reviews__list-item--icon">
+                  <img src="./images/index/reviews/avatar-3.png" alt="аватар отзывы">
+                </div>
+                <div class="shop-reviews__list-item--nickname">
+                  <div>
+                    Константиновский Игорь
+                  </div>
+                  <div class="
+                      products-section__svg-container
+                      products-section__svg-container--four
+                      ">
+                    <svg class="img products-section__svg" width="14" height="14">
+                      <use href="./icons/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="img products-section__svg" width="14" height="14">
+                      <use href="./icons/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="img products-section__svg" width="14" height="14">
+                      <use href="./icons/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="img products-section__svg" width="14" height="14">
+                      <use href="./icons/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="img products-section__svg" width="14" height="14">
+                      <use href="./icons/sprite.svg#icon-star"></use>
+                    </svg>
+                  </div
+                  >
+                </div>
+              </div>
+              <div class="shop-reviews__list-item--subtitle">
+                отзыв о товаре
+              </div>
+              <div class="shop-reviews__list-item--title">
+                Лейка для душа BRADEX ПРИЛИВ СИЛ TD 0367
+              </div>
+              <div>
+                В целом неплохая, была такая же с китая, но там режим массажа сильнее, здесь мягкий, а так неплохая, не считая, что немного на месте крепления шланга немного капает вода, но это устраняется кольцом.
+              </div>
+            </li>
+            <li class="shop-reviews__list-item">
+              <div class="shop-reviews__list-item--header">
+                <div class="shop-reviews__list-item--icon">
+                  <img src="./images/index/reviews/avatar-2.png" alt="аватар отзывы">
+                </div>
+                <div class="shop-reviews__list-item--nickname">
+                  <div>
+                    Константиновский Игорь
+                  </div>
+                  <div class="
+                      products-section__svg-container
+                      products-section__svg-container--four
+                      ">
+                    <svg class="img products-section__svg" width="14" height="14">
+                      <use href="./icons/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="img products-section__svg" width="14" height="14">
+                      <use href="./icons/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="img products-section__svg" width="14" height="14">
+                      <use href="./icons/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="img products-section__svg" width="14" height="14">
+                      <use href="./icons/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="img products-section__svg" width="14" height="14">
+                      <use href="./icons/sprite.svg#icon-star"></use>
+                    </svg>
+                  </div
+                  >
+                </div>
+              </div>
+              <div>
+                отзыв о товаре
+              </div>
+              <div class="shop-reviews__list-item--title">
+                Лейка для душа BRADEX ПРИЛИВ СИЛ TD 0367
+              </div>
+              <div>
+                В целом неплохая, была такая же с китая, но там режим массажа сильнее, здесь мягкий, а так неплохая, не считая, что немного на месте крепления шланга немного капает вода, но это устраняется кольцом.
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="products-section__main-link">
+          <a class="link products-section__main-link" href="#">Смотреть все</a>
+        </div>
+      </div>
+    </section>
+
+    <!--* Independent Reviews Section -->
+    <section class="section independent-reviews__section">
+      <div class="container independent-reviews__container">
+        <div class="products-section__title-container">
+          <h2 class="title products-section__title">Отзывы на независимых площадках</h2>
+          <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--prev
+            " type="button">
+            <svg class="img products-section__button-svg" width="10" height="16">
+              <use href="./icons/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--next
+            " type="button">
+            <svg class="img products-section__button-svg" width="10" height="16">
+              <use href="./icons/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="independent-reviews__list">
+          <li class="independent-reviews__list-item">
+            <div class="independent-reviews__list-item--img">
+              <img src="./images/index/reviews-on-independent-sites/yandex.png" alt="отзывы яндекс">
+            </div>
+            <div class="independent-reviews__list-item--rate">
+              <div class="
+                      products-section__svg-container
+                      products-section__svg-container--four
+                      ">
+                <svg class="img products-section__svg" width="14" height="14">
+                  <use href="./icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="img products-section__svg" width="14" height="14">
+                  <use href="./icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="img products-section__svg" width="14" height="14">
+                  <use href="./icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="img products-section__svg" width="14" height="14">
+                  <use href="./icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="img products-section__svg" width="14" height="14">
+                  <use href="./icons/sprite.svg#icon-star"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="independent-reviews__list-item--link">
+              <a href="">Смотреть в источнике</a>
+            </div>
+          </li>
+          <li class="independent-reviews__list-item">
+            <div class="independent-reviews__list-item--img">
+              <img src="./images/index/reviews-on-independent-sites/google.png" alt="отзывы яндекс">
+            </div>
+            <div class="independent-reviews__list-item--rate">
+              <span>4.5</span>
+              из
+              <span>5</span>
+            </div>
+            <div class="independent-reviews__list-item--link">
+              <a href="">Смотреть в источнике</a>
+            </div>
+          </li>
+          <li class="independent-reviews__list-item">
+            <div class="independent-reviews__list-item--img">
+              <img src="./images/index/reviews-on-independent-sites/gis.png" alt="отзывы яндекс">
+            </div>
+            <div class="independent-reviews__list-item--rate">
+              <div class="
+                      products-section__svg-container
+                      products-section__svg-container--four
+                      ">
+                <svg class="img products-section__svg" width="14" height="14">
+                  <use href="./icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="img products-section__svg" width="14" height="14">
+                  <use href="./icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="img products-section__svg" width="14" height="14">
+                  <use href="./icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="img products-section__svg" width="14" height="14">
+                  <use href="./icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="img products-section__svg" width="14" height="14">
+                  <use href="./icons/sprite.svg#icon-star"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="independent-reviews__list-item--link">
+              <a href="">Смотреть в источнике</a>
+            </div>
+          </li>
+          <li class="independent-reviews__list-item">
+            <div class="independent-reviews__list-item--img">
+              <img src="./images/index/reviews-on-independent-sites/zoon.png" alt="отзывы яндекс">
+            </div>
+            <div class="independent-reviews__list-item--rate">
+              <span>4.5</span>
+              из
+              <span>5</span>
+            </div>
+            <div class="independent-reviews__list-item--link">
+              <a href="">Смотреть в источнике</a>
+            </div>
+          </li>
+        </ul>
+        <div class="products-section__main-link">
+          <a class="link products-section__main-link" href="#">Смотреть все</a>
+        </div>
+      </div>
+    </section>
+
+    <!--* Thankfulness Section -->
+    <section class="section thankfulness__section">
+      <div class="container independent-reviews__container">
+        <div class="products-section__title-container">
+          <h2 class="title products-section__title">Благодарности корпоративных клиентов</h2>
+          <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--prev
+            " type="button">
+            <svg class="img products-section__button-svg" width="10" height="16">
+              <use href="./icons/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--next
+            " type="button">
+            <svg class="img products-section__button-svg" width="10" height="16">
+              <use href="./icons/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="independent-reviews__list">
+          <li class="independent-reviews__list-item thankfulness__list-item">
+            <div class="independent-reviews__list-item--img thankfulness__list-item--img">
+              <img src="./images/index/acknowledgments-from-corporate-clients/item-1.jpg" alt="отзывы яндекс">
+            </div>
+            <div class="thankfulness__list-item--title">
+              Компания «Трейдер Инн», Москва
+            </div>
+          </li>
+          <li class="independent-reviews__list-item thankfulness__list-item">
+            <div class="independent-reviews__list-item--img thankfulness__list-item--img">
+              <img src="./images/index/acknowledgments-from-corporate-clients/item-2.jpg" alt="отзывы яндекс">
+            </div>
+            <div class="thankfulness__list-item--title">
+              Компания «Трейдер Инн», Москва
+            </div>
+          </li>
+          <li class="independent-reviews__list-item thankfulness__list-item">
+            <div class="independent-reviews__list-item--img thankfulness__list-item--img">
+              <img src="./images/index/acknowledgments-from-corporate-clients/item-3.jpg" alt="отзывы яндекс">
+            </div>
+            <div class="thankfulness__list-item--title">
+              Компания «Трейдер Инн», Москва
+            </div>
+          </li>
+        </ul>
+        <div class="products-section__main-link">
+          <a class="link products-section__main-link" href="#">Смотреть все</a>
+        </div>
+      </div>
+    </section>
+
+    <!--* About us Section -->
+    <section class="section about-us__section">
+    <div class="container about-us__container">
+      <div class="about-us__content">
+        <div class="title">
+          О компании СтройБазар
+        </div>
+        <div class="text">
+          <p>Интернет-магазин «СтройБазар» — это самая большая площадка по продаже садовой техники, электро- и бензоинструментов. У нас в наличии есть товар, который всегда пользуется спросом, а также редкие и даже эксклюзивные изделия. В СтройБазар вы сможете найти то, что искали уже очень давно.</p>
+          <p>Мы сотрудничаем с крупнейшими производителями, от которых получаем товары напрямую. Все, что продается в нашем интернет-магазине сертифицировано, соответствует всем нормам качества и имеет гарантию
+          от производителя. При случае — вы сможете обратиться в наш сервисный центр.</p>
+        </div>
+      </div>
+      <div class="about-us__img">
+        <div class="about-us__img--background"></div>
+        <div class="about-us__img--img">
+          <img src="./images/index/about-us/item-1.png" alt="о нас">
+          <img src="./images/index/about-us/arrow.png" class="arrow" alt="о нас">
+          <p class="about-us__img--name">
+            Обзор складов интернет-магазина «СтройБазар»
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!--* Support Section -->
+    <section class="section support__section">
+    <div class="container support__container">
+      <div class="products-section__title-container">
+        <h2 class="title products-section__title">Сервис и поддержка СтройБазар</h2>
+      </div>
+      <div class="support__container-row">
+        <div class="support__container-main-item">
+          <p>Сервисные центры производителей</p>
+          <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--next
+            " type="button">
+            <svg class="img products-section__button-svg" width="10" height="16">
+              <use href="./icons/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="support__container-col">
+          <div>
+            <div class="support__container-item item-1">
+              <p>Как сделать заказ</p>
+              <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--next
+            " type="button">
+                <svg class="img products-section__button-svg" width="10" height="16">
+                  <use href="./icons/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="support__container-item item-2">
+              <p>Отследить заказ</p>
+              <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--next
+            " type="button">
+                <svg class="img products-section__button-svg" width="10" height="16">
+                  <use href="./icons/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div>
+            <div class="support__container-item item-3">
+              <p>Гарантия на товары</p>
+              <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--next
+            " type="button">
+                <svg class="img products-section__button-svg" width="10" height="16">
+                  <use href="./icons/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="support__container-item item-4">
+              <p>Возврат товаров</p>
+              <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--next
+            " type="button">
+                <svg class="img products-section__button-svg" width="10" height="16">
+                  <use href="./icons/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="support__container-bottom-item">
+          <p>Бизнес-клиентам</p>
+          <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--next
+            " type="button">
+            <svg class="img products-section__button-svg" width="10" height="16">
+              <use href="./icons/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!--* certificates Section -->
+    <section class="section certificates__section">
+      <div class="container independent-reviews__container">
+        <div class="products-section__title-container">
+          <h2 class="title products-section__title">Сертификаты</h2>
+          <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--prev
+            " type="button">
+            <svg class="img products-section__button-svg" width="10" height="16">
+              <use href="./icons/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--next
+            " type="button">
+            <svg class="img products-section__button-svg" width="10" height="16">
+              <use href="./icons/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="independent-reviews__list">
+          <li class="independent-reviews__list-item certificates__list-item">
+            <div class="independent-reviews__list-item--img certificates__list-item--img">
+              <img src="./images/index/certificates/item-1.jpg" alt="сертификаты">
+            </div>
+            <div class="certificates__list-item--title">
+              Сертификат официального дилера Makita
+            </div>
+          </li>
+          <li class="independent-reviews__list-item certificates__list-item">
+            <div class="independent-reviews__list-item--img certificates__list-item--img">
+              <img src="./images/index/certificates/item-2.jpg" alt="сертификаты">
+            </div>
+            <div class="certificates__list-item--title">
+              Сертификат официального дилера Makita
+            </div>
+          </li>
+          <li class="independent-reviews__list-item certificates__list-item">
+            <div class="independent-reviews__list-item--img certificates__list-item--img">
+              <img src="./images/index/certificates/item-3.jpg" alt="сертификаты">
+            </div>
+            <div class="certificates__list-item--title">
+              Сертификат официального дилера Makita
+            </div>
+          </li>
+          <li class="independent-reviews__list-item certificates__list-item">
+            <div class="independent-reviews__list-item--img certificates__list-item--img">
+              <img src="./images/index/certificates/item-1.jpg" alt="сертификаты">
+            </div>
+            <div class="certificates__list-item--title">
+              Сертификат официального дилера Makita
+            </div>
+          </li>
+        </ul>
+        <div class="products-section__main-link">
+          <a class="link products-section__main-link" href="#">Смотреть все</a>
+        </div>
+      </div>
+    </section>
+
+    <!--* faq Section -->
+    <section class="section faq__section">
+      <div class="container faq__container">
+        <div class="faq__title title">
+          <h2>Часто задаваемые вопросы</h2>
+        </div>
+        <ul class="faq__list">
+          <li class="faq__list-item">
+            <div class="faq__list-item--question">
+              <span>
+              Возможна ли рассрочка на покупку товара и какие условия рассрочки?
+              С какими банками вы сотрудничаете?
+            </span>
+              <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--next button-active
+            " type="button">
+                <svg class="img products-section__button-svg" width="10" height="16">
+                  <use href="./icons/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="faq__list-item--answer">
+              Доставка в регионы осуществляется только после 100% предоплаты заказа. Минимальная сумма заказа 3 000 рублей. Товар может
+              быть доставлен в Ваш город с помощью любой транспортной компании (как пример DPD, СДЭК, ПЭК, Деловые линии) имеющей представительство в городе Москва и в Вашем городе (в этом случае Вы производите оплату с учетом доставки по Москве, до офиса транспортной компании в соответствии с тарифами нашей курьерской службы доставки).
+            </div>
+          </li>
+          <li class="faq__list-item">
+            <div class="faq__list-item--question">
+              <span>
+              Возможна ли рассрочка на покупку товара и какие условия рассрочки?
+              С какими банками вы сотрудничаете?
+            </span>
+              <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button
+            " type="button">
+                <svg class="img products-section__button-svg" width="10" height="16">
+                  <use href="./icons/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="faq__list-item">
+            <div class="faq__list-item--question">
+              <span>
+              Возможна ли рассрочка на покупку товара и какие условия рассрочки?
+              С какими банками вы сотрудничаете?
+            </span>
+              <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--next
+            " type="button">
+                <svg class="img products-section__button-svg" width="10" height="16">
+                  <use href="./icons/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="faq__list-item">
+            <div class="faq__list-item--question">
+              <span>
+              Возможна ли рассрочка на покупку товара и какие условия рассрочки?
+              С какими банками вы сотрудничаете?
+            </span>
+              <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button
+            " type="button">
+                <svg class="img products-section__button-svg" width="10" height="16">
+                  <use href="./icons/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="faq__list-item">
+            <div class="faq__list-item--question">
+              <span>
+              Возможна ли рассрочка на покупку товара и какие условия рассрочки?
+              С какими банками вы сотрудничаете?
+            </span>
+              <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button
+            " type="button">
+                <svg class="img products-section__button-svg" width="10" height="16">
+                  <use href="./icons/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--* brands Section -->
+    <section class="section brands__section">
+    <div class="container brands__container">
+      <div class="products-section__title-container">
+        <h2 class="title products-section__title">Популярные бренды</h2>
+        <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--prev
+            " type="button">
+          <svg class="img products-section__button-svg" width="10" height="16">
+            <use href="./icons/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+        <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--next
+            " type="button">
+          <svg class="img products-section__button-svg" width="10" height="16">
+            <use href="./icons/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
+      <ul class="brands__list">
+        <li class="brands__list-item">
+          <div class="brands__logo">
+            <img src="./images/index/popular-brands/dewalt.jpg" alt="популярные бренды">
+          </div>
+          <div class="brands__name">
+            Dewalt
+          </div>
+        </li>
+        <li class="brands__list-item">
+          <div class="brands__logo">
+            <img src="./images/index/popular-brands/husqvarna.png" alt="популярные бренды">
+          </div>
+          <div class="brands__name">
+            Husqvarna
+          </div>
+        </li>
+        <li class="brands__list-item">
+          <div class="brands__logo">
+            <img src="./images/index/popular-brands/hilti.jpg" alt="популярные бренды">
+          </div>
+          <div class="brands__name">
+            Hilti
+          </div>
+        </li>
+        <li class="brands__list-item">
+          <div class="brands__logo">
+            <img src="./images/index/popular-brands/bosch.jpg" alt="популярные бренды">
+          </div>
+          <div class="brands__name">
+            Bosch
+          </div>
+        </li>
+        <li class="brands__list-item">
+          <div class="brands__logo">
+            <img src="./images/index/popular-brands/makita.png" alt="популярные бренды">
+          </div>
+          <div class="brands__name">
+            Makita
+          </div>
+        </li>
+      </ul>
+      <div class="products-section__main-link">
+        <a class="link products-section__main-link" href="#">Все бренды</a>
+      </div>
+    </div>
+  </section>
+
+    <!--* magazine Section -->
+    <section class="section magazine__section">
+      <div class="container magazine__container">
+        <div class="products-section__title-container">
+          <h2 class="title products-section__title">Журнал СтройБазар</h2>
+          <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--prev
+            " type="button">
+            <svg class="img products-section__button-svg" width="10" height="16">
+              <use href="./icons/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--next
+            " type="button">
+            <svg class="img products-section__button-svg" width="10" height="16">
+              <use href="./icons/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="magazine__subtitle">
+          <span>
+            Статьи, обзоры, рейтинги и новости
+          </span>
+        </div>
+        <ul class="magazine__list">
+          <li class="magazine__list-item">
+            <div class="magazine__list-item--img">
+              <img src="./images/index/magazine/item-1.jpg" alt="журнал">
+            </div>
+            <div class="magazine__list-item--tags">
+              <ul class="magazine__tags-list">
+                <li class="magazine__tags-list-item">
+                  <a href="">обзоры</a>
+                </li>
+                <li class="magazine__tags-list-item">
+                  <a href="">рейтинги</a>
+                </li>
+                <li class="magazine__tags-list-item">
+                  <a href="">статьи</a>
+                </li>
+              </ul>
+            </div>
+            <div class="magazine__list-item--text">
+              Новое поступление линейки дрелей
+              и перфораторов Makita
+            </div>
+            <div class="magazine__list-item--link">
+              <img src="./icons/arrow-link.svg" alt="перейти по ссылке">
+            </div>
+          </li>
+          <li class="magazine__list-item">
+            <div class="magazine__list-item--img">
+              <img src="./images/index/magazine/item-2.jpg" alt="журнал">
+            </div>
+            <div class="magazine__list-item--tags">
+              <ul class="magazine__tags-list">
+                <li class="magazine__tags-list-item">
+                  <a href="">обзоры</a>
+                </li>
+              </ul>
+            </div>
+            <div class="magazine__list-item--text">
+              Новое поступление линейки дрелей
+              и перфораторов Makita
+            </div>
+            <div class="magazine__list-item--link">
+              <img src="./icons/arrow-link.svg" alt="перейти по ссылке">
+            </div>
+          </li>
+          <li class="magazine__list-item">
+            <div class="magazine__list-item--img">
+              <img src="./images/index/magazine/item-3.jpg" alt="журнал">
+            </div>
+            <div class="magazine__list-item--tags">
+              <ul class="magazine__tags-list">
+                <li class="magazine__tags-list-item">
+                  <a href="">обзоры</a>
+                </li>
+                <li class="magazine__tags-list-item">
+                  <a href="">рейтинги</a>
+                </li>
+              </ul>
+            </div>
+            <div class="magazine__list-item--text">
+              Новое поступление линейки дрелей
+              и перфораторов Makita
+            </div>
+            <div class="magazine__list-item--link">
+              <img src="./icons/arrow-link.svg" alt="перейти по ссылке">
+            </div>
+          </li>
+        </ul>
+        <div class="products-section__main-link">
+          <a class="link products-section__main-link" href="#">Больше материалов</a>
+        </div>
+      </div>
+    </section>
+
+    <!--* On youtube Section -->
+    <section class="section on-youtube__section">
+      <div class="container on-youtube__container">
+        <div class="products-section__title-container">
+          <h2 class="title products-section__title">СтройБазар на YouTube</h2>
+          <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--prev
+            " type="button">
+            <svg class="img products-section__button-svg" width="10" height="16">
+              <use href="./icons/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <button class="
+              button-with-arrow button-with-arrow--transparent-red
+              products-section__button products-section__button--next
+            " type="button">
+            <svg class="img products-section__button-svg" width="10" height="16">
+              <use href="./icons/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="on-youtube__list">
+          <li class="on-youtube__list-item">
+            <div class="on-youtube__list-item--img">
+              <img src="./images/index/on-youtube/item-1.png" alt="магазин на youtube">
+            </div>
+            <div class="on-youtube__list-item--text">
+              Обзор возможностей
+              электропилы Makita
+            </div>
+          </li>
+          <li class="on-youtube__list-item">
+            <div class="on-youtube__list-item--img">
+              <img src="./images/index/on-youtube/item-2.png" alt="магазин на youtube">
+            </div>
+            <div class="on-youtube__list-item--text">
+              Обзор возможностей
+              электропилы Makita
+            </div>
+          </li>
+          <li class="on-youtube__list-item">
+            <div class="on-youtube__list-item--img">
+              <img src="./images/index/on-youtube/item-3.png" alt="магазин на youtube">
+            </div>
+            <div class="on-youtube__list-item--text">
+              Обзор возможностей
+              электропилы Makita
+            </div>
+          </li>
+          <li class="on-youtube__list-item">
+            <div class="on-youtube__list-item--img">
+              <img src="./images/index/on-youtube/item-4.png" alt="магазин на youtube">
+            </div>
+            <div class="on-youtube__list-item--text">
+              Обзор возможностей
+              электропилы Makita
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="products-section__main-link">
+        <a class="link products-section__main-link" href="#">Подписаться на канал</a>
+      </div>
+    </section>
+
+    <!--* help form Section -->
+    <section class="section help-form__section">
+      <div class="container help-form__container">
+        <div class="help-form__col">
+          <div class="title help-form__title">
+            Не можете выбрать товар?
+            <span>Консультант поможет!</span>
+          </div>
+          <div class="help-form__subtitle">
+            Заполните форму и отправьте заявку, консультант
+            свяжется с вами в указанное время
+          </div>
+          <form action="" class="help-form__form">
+            <div class="help-form__row">
+              <input type="text" class="help-form__input" placeholder="Имя *">
+              <input type="text" class="help-form__input" placeholder="Телефон *">
+            </div>
+            <div class="help-form__row">
+              <input type="text" class="help-form__input" placeholder="E-mail *">
+              <input type="text" class="help-form__input" placeholder="Время звонка *">
+            </div>
+            <div class="help-form__row">
+              <textarea cols="70" rows="10" placeholder="Сообщение" class="help-form__textarea"></textarea>
+            </div>
+            <div class="help-form__row">
+              <div class="license">
+                <label for="license-2">
+                  <input type="checkbox" id="license-2" class="help-form__checkbox">
+                  <div class="help-form__custom-checkbox"></div>
+                </label>
+                <div>
+                  <span>Я даю свое согласие на обработку персональных данных и соглашаюсь
+                  с условиями и политикой конфиденциальности</span>
+                </div>
+              </div>
+              <button class="button button--red slider-list__button" type="submit">
+                Отправить
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--* subscribe Section -->
+    <section class="section subscribe__section">
+      <div class="container">
+        <div class="title subscribe__title">
+          <span>Подписка на скидки и акции</span>
+        </div>
+        <div class="subscribe__subtitle">
+          Подписывайтесь и получайте самые интересные предложения первыми
+        </div>
+        <form action="" class="subscribe__form">
+          <div class="subscribe__row">
+            <input type="text" class="subscribe__input" placeholder="Имя *">
+            <input type="text" class="subscribe__input" placeholder="E-mail *">
+            <button class="button button--red slider-list__button subscribe__button" type="submit">ПОДПИСАТЬСЯ</button>
+          </div>
+          <div class="subscribe__license">
+            <label for="license">
+              <input type="checkbox" id="license" class="subscribe__checkbox">
+              <div class="subscribe__custom-check-icon" ></div>
+            </label>
+            <span class="subscribe__license--text">Я даю свое согласие на обработку персональных данных и соглашаюсь с условиями и политикой конфиденциальности</span>
+          </div>
+        </form>
       </div>
     </section>
   </body>

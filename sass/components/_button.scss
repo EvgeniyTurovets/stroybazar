@@ -13,21 +13,49 @@
     border-color: #ffffff;
     color: $text-white-theme-color;
   }
-  
+
   &--transparent-white {
     border-color: #ffffff;
     color: $text-dark-theme-color;
   }
-  
+
   &--red {
     background-color: $accent-color;
     border-color: $accent-color;
     color: $text-dark-theme-color;
   }
-  
+
   &--transparent-red {
     border-color: $accent-color;
     color: $accent-color;
+
+    & > svg {
+      fill: $accent-color;
+      margin: 0 10px 0 0;
+    }
+  }
+
+  &--green {
+    background: #24C834;
+    color: $text-dark-theme-color;
+
+    & > svg {
+      fill: $text-dark-theme-color;
+    }
+  }
+
+  &--green:hover {
+    box-shadow: none !important;
+  }
+
+  &--transparent-red:hover {
+    background-color: $accent-color;
+    color: $text-dark-theme-color;
+    box-shadow: none !important;
+
+    & > svg {
+      fill: $text-dark-theme-color;
+    }
   }
 
   &:hover {
@@ -69,4 +97,48 @@
     transform: scale(0.9, 0.9);
   }
 }
+
+.button-products {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  border-radius: 15px;
+  border-color: $background-dark-color;
+  background: $background-dark-color;
+  color: $accent-color;
+}
+
+.button-products-count-down:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $accent-color;
+  margin: auto 7px;
+  height: 2px;
+}
+
+.button-products-count-up:before,
+.button-products-count-up:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $accent-color;
+}
+
+.button-products-count-up:before {
+  width: 2px;
+  margin: 7px auto;
+}
+
+.button-products-count-up:after {
+  margin: auto 7px;
+  height: 2px;
+}
+
 /* ========== End Button ========== */

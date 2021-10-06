@@ -1,2 +1,80 @@
 /* ========== Modal ========== */
+.modal {
+  .added-to-cart {
+    width: 337px;
+    position: absolute;
+    right: 0;
+    bottom: 160px;
+    box-shadow: 0 29px 100px -56px $title-white-theme-color;
+    z-index: 2;
+
+    &__close-modal {
+      position: relative;
+
+      & > span {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 32px;
+        height: 32px;
+        opacity: 0.3;
+      }
+
+      & > span:hover {
+        opacity: 1;
+      }
+
+      & > span:before, & > span:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 33px;
+        width: 2px;
+        background-color: #333;
+      }
+
+      & > span:before {
+        transform: rotate(45deg);
+      }
+
+      & > span:after {
+        transform: rotate(-45deg);
+      }
+    }
+
+    &__content {
+      padding: 0 42px 30px 42px;
+    }
+
+    &__title {
+      margin: 40px auto 16px auto;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 25px;
+      text-align: center;
+    }
+
+    &__img {
+      text-align: center;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 21px;
+      margin-top: 27px; text-align: center;
+    }
+
+    & button {
+      width: 100%;
+    }
+
+    .button--green {
+      margin: 18px 0 11px 0;
+    }
+
+    .button--transparent-red {
+      margin: 0;
+    }
+  }
+}
 /* ========== End Modal ========== */

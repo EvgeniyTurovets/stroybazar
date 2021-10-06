@@ -1,0 +1,59 @@
+.magazine {
+  &__section {
+    background: $background-dark-color;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 28px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+
+  &__list-item {
+    width: 30%;
+  }
+
+  &__list-item--img img {
+    border-radius: 5px;
+  }
+
+  &__tags-list {
+    margin-top: 26px;
+    list-style: none;
+    display: flex;
+  }
+
+  &__tags-list-item {
+    margin-left: 9px;
+    padding: 2px 9px;
+    background: $text-dark-theme-color;
+  }
+
+  &__tags-list-item a {
+    color: #0098C8;
+    text-decoration: none;
+  }
+
+  &__tags-list-item:first-child {
+    margin-left: 0;
+  }
+
+  &__tags-list-item:hover {
+    color: $accent-color;
+  }
+
+  &__list-item--text {
+    margin: 30px 0 20px 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}

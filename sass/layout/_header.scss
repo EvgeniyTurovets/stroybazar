@@ -1,10 +1,7 @@
 /* ========== Header ========== */
-.header {
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #EDEDED;
-  }
+.header__top-line {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-address-locations {
@@ -18,7 +15,8 @@
   }
   
   &__link {
-    @include font(300, 15px, 57px, $title-white-theme-color);
+    @include font(300, 15px, 57px);
+    color: $title-white-theme-color;
     // transition: color $transition-delay;
 
     // &:hover {
@@ -38,7 +36,8 @@
   }
 
   &__link {
-    @include font(300, 15px, 57px, $title-white-theme-color);
+    @include font(300, 15px, 57px);
+    color: $title-white-theme-color;
   }
 }
 
@@ -53,7 +52,8 @@
   }
 
   &__link {
-    @include font(500, 15px, 57px, $title-white-theme-color);
+    @include font(500, 15px, 57px);
+    color: $title-white-theme-color;
   }
 }
 
@@ -73,6 +73,73 @@
     position: absolute;
     padding: 20px;
     border: 1px solid teal;
+  }
+}
+.header {
+  &__middle-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 0;
+    border-bottom: 1px solid #EDEDED;
+    border-top: 1px solid #EDEDED;
+  }
+
+  &__catalogue {
+    display: flex;
+    align-items: center;
+    background: $background-dark-color;
+    border-radius: 5px;
+    padding: 5px 16px;
+
+    & span {
+      margin-left: 11px;
+    }
+  }
+
+  &__search input {
+    width: 330px;
+    height: 48px;
+    padding: 0 18px;
+    border: 1px solid #EDEDED;
+    border-radius: 5px;
+    outline: 1px solid #EDEDED;
+    background: url("../../icons/loupe.svg") no-repeat center right 18px;
+  }
+
+  &__user-img,
+  &__categories div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__user-img svg,
+  &__categories div svg {
+    fill: $icons-standart-color;
+  }
+
+  &__user-img > span {
+    margin-top: 10px;
+  }
+
+  &__categories {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__categories div > span {
+    margin-top: 10px;
+  }
+
+  &__categories div:not(:first-child){
+    margin-left: 26px;
+  }
+
+  &__menu-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 0;
+    list-style: none;
   }
 }
 /* ========== End Header ========== */

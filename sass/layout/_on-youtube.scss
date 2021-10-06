@@ -1,0 +1,16 @@
+.on-youtube {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    list-style: none;
+  }
+
+  &__list-item--img img {
+    border-radius: 5px;
+  }
+
+  &__list-item--text {
+    margin-top: 20px;
+  }
+}

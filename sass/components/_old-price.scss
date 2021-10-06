@@ -1,0 +1,16 @@
+/* ========== Old price ========== */
+.old-price {
+  position: relative;
+  color: #939393;
+}
+
+.old-price:before {
+  content: '';
+  border-bottom: 1px solid #EB0000;
+  position: absolute;
+  left: -5px;
+  width: 100px;
+  height: 50%;
+  transform: rotate(-6deg);
+}
+/* ========== End Old price ========== */
