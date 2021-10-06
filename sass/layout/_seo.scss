@@ -1,0 +1,112 @@
+/* ========== Seo Section ========== */
+.seo {
+  &__title {
+    line-height: 46px;
+    color: $title-white-theme-color;
+
+    &--first {
+      margin-bottom: 28px;
+      font-weight: 500;
+      font-size: 35px;
+    }
+    
+    &--second {
+      margin-bottom: 26px;
+      font-weight: 500;
+      font-size: 30px;
+    }
+    
+    &--thrid {
+      margin-bottom: 16px;
+      font-weight: 500;
+      font-size: 25px;
+    }
+    
+    &--fourth {
+      margin-bottom: 10px;
+      font-weight: 400;
+      font-size: 21px;
+    }
+    
+    &--fifth {
+      margin-bottom: 12px;
+      font-weight: 300;
+      font-size: 21px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 28px;
+    @include font(300, 18px, 23px);
+    color: $text-white-theme-color;
+  }
+
+  &__link {
+    color: $accent-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__image {
+    float: left;
+    margin-right: 24px;
+  }
+
+  &__list {
+    margin-bottom: 30px;
+    @include font(300, 18px, 42px);
+    color: $text-white-theme-color;
+
+    &--ordered {
+      counter-reset: my-counter;
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 25px;
+    
+    &--unordered::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      display: block;
+      width: 4px;
+      height: 4px;
+      background-color: $accent-color;
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
+
+    &--ordered {
+      counter-increment: my-counter;
+    }
+  
+    &--ordered::before {
+      content: counter(my-counter) ".";
+      position: absolute;
+      left: 0;
+      @include font(300, 18px, 42px);
+      color: $accent-color;
+    }
+  }
+
+  &__info-container {
+    padding: 15px 47px;
+    background: #F4F4F4;
+    border-radius: 3px;
+  }
+
+  &__info-text {
+    min-height: 44px;
+    padding-left: 105px;
+    background-image: url("../icons/info.svg");
+    background-repeat: no-repeat;
+    background-size: 44px;
+    background-position: left top;
+  }
+}
+/* ========== End Seo Section ========== */
