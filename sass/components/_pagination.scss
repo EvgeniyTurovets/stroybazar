@@ -1,0 +1,45 @@
+/* ========== Pagination ========== */
+.pagination {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    margin: 0 18px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: color $transition-delay;
+    
+    &--active {
+      background-color: #F4F4F4;
+    }
+
+    &:not(:last-child) {
+      margin-right: 6px;
+    }
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  &__button {
+    background-color: #fff;
+    
+    &--next {
+      transform: rotate(0.5turn);
+    }
+  }
+}
+/* ========== End Pagination ========== */
