@@ -1,0 +1,103 @@
+/* ========== Availability Of Stores Section ========== */
+  .availability-of-stores {
+    &__container {
+    }
+
+    &__title {
+      margin-bottom: 20px;
+      @include font(700, 18px, 22px);
+      color: $title-white-theme-color;
+    }
+
+    &__list {
+      @include font(300, 15px, 21px);
+    }
+
+    &__item {
+      display: flex;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(237, 237, 237, 0.63);
+      
+      &:first-child {
+        border-top: 1px solid rgba(237, 237, 237, 0.63);
+      }
+    }
+    
+    &__status {
+      width: 10%;
+
+      &--available {
+        color: #019610;
+      }
+
+      &--not-available {
+        color: #EB0000;
+      }
+
+      &--on-order {
+        color: #FF7A00;
+      }
+    }
+
+    &__address {
+      position: relative;
+      width: 50%;
+      padding-left: 28px;
+      padding-right: 20px;
+      
+      &::before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 0;
+        display: block;
+        width: 17px;
+        height: 20px;
+        background-image: url("../icons/map.svg");
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &__time {
+      position: relative;
+      width: 20%;
+      padding-left: 29px;
+      padding-right: 20px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 0;
+        display: block;
+        width: 19px;
+        height: 19px;
+        background-image: url("../icons/clock.svg");
+      }
+    }
+    
+    &__tel {
+      position: relative;
+      width: 20%;
+      padding-left: 28px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 0;
+        display: block;
+        width: 18px;
+        height: 18px;
+        background-image: url("../icons/phone.svg");
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+/* ========== End Availability Of Stores Section ========== */

@@ -1,0 +1,15 @@
+/* ========== Card Info Section ========== */
+.card-info {
+  padding: 65px 0 80px 0;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 0 73px;
+    border-bottom: 2px solid #DFDFDF;
+    @include font(700, 18px, 22px);
+    color: $title-white-theme-color;
+  }
+}
+/* ========== End Card Info Section ========== */

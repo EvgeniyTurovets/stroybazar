@@ -10,10 +10,10 @@
 
 @import "./components/button";
 @import "./components/title";
+@import "./components/stars";
+@import "./components/stickers";
 
-// @import "./layout/header";
-@import "./layout/slider";
-@import "./layout/catalogue";
-@import "./layout/this-is";
-@import "./layout/promotions";
-@import "./layout/popular-goods";
+@import "./layout/breadcrumb";
+@import "./layout/card";
+@import "./layout/availability-of-stores";
+@import "./layout/card-info";

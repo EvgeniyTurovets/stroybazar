@@ -1,0 +1,27 @@
+/* ========== Stars Component ========== */
+.stars {
+  display: flex;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 4px;
+    }
+  }
+
+  &--one > &__item:nth-child(-n+1) > &__svg {
+    --color2: #ffd15b;
+  }
+  &--two > &__item:nth-child(-n+2) > &__svg {
+    --color2: #ffd15b;
+  }
+  &--three > &__item:nth-child(-n+3) > &__svg {
+    --color2: #ffd15b;
+  }
+  &--four > &__item:nth-child(-n+4) > &__svg {
+    --color2: #ffd15b;
+  }
+  &--five > &__item:nth-child(-n+5) > &__svg {
+    --color2: #ffd15b;
+  }
+}
+/* ========== End Stars Component ========== */

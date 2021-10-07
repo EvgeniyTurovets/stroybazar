@@ -10,10 +10,12 @@
 
 @import "./components/button";
 @import "./components/title";
+@import "./components/range";
+@import "./components/select";
+@import "./components/pagination";
 
-// @import "./layout/header";
-@import "./layout/slider";
-@import "./layout/catalogue";
-@import "./layout/this-is";
-@import "./layout/promotions";
-@import "./layout/popular-goods";
+@import "./layout/breadcrumb";
+@import "./layout/catalogue-list";
+@import "./layout/often-searched";
+@import "./layout/categorie-reviews";
+@import "./layout/seo";

@@ -1,0 +1,24 @@
+/* ========== Often Searched Section ========== */
+.often-searched {
+  margin-bottom: 53px;
+  
+  &__title {
+    margin-bottom: 2px;
+    @include font(500, 22px, 46px);
+    color: $title-white-theme-color;
+  }
+
+  &__list {
+    @include font(400, 16px, 36px);
+    color: #0098C8;
+  }
+
+  &__item {
+    display: inline-block;
+    
+    &:not(:last-child) {
+      margin-right: 48px;
+    }
+  }
+}
+/* ========== End Often Searched Section ========== */
