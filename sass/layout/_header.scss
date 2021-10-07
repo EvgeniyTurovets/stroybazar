@@ -17,11 +17,11 @@
   &__link {
     @include font(300, 15px, 57px);
     color: $title-white-theme-color;
-    // transition: color $transition-delay;
+    transition: color $transition-delay;
 
-    // &:hover {
-    //   color: $accent-color;
-    // }
+     &:hover {
+       color: $accent-color;
+     }
   }
 }
 
@@ -35,9 +35,28 @@
     margin-right: 40px;
   }
 
+  &__item {
+    &:hover {
+      & > a,
+      & .header-sublist__text {
+        color: $accent-color;
+      }
+
+      & > .header-sublist__thumb > svg {
+        fill: $accent-color;
+        transform: rotate(-270deg);
+      }
+
+      & > ul {
+        display: block;
+      }
+    }
+  }
+
   &__link {
     @include font(300, 15px, 57px);
     color: $title-white-theme-color;
+    transition: color $transition-delay;
   }
 }
 
@@ -51,17 +70,38 @@
     margin-right: 35px;
   }
 
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item > span {
+    align-content: center;
+    width: 13px;
+    height: 13px;
+    margin-left: 5px;
+    padding: 3px 1px;
+    border-radius: 20px;
+    transform: rotate(-90deg);
+    background: $icons-standart-color;
+    fill: $accent-color;
+  }
+
   &__link {
     @include font(500, 15px, 57px);
     color: $title-white-theme-color;
   }
 }
 
-.client-menu {
+.header-sublist {
   &__thumb {
     display: flex;
     align-items: center;
     cursor: pointer;
+
+    & > svg {
+      transform: rotate(-90deg);
+    }
   }
 
   &__text {
@@ -69,10 +109,25 @@
   }
 
   &__list {
-    // display: none;
+    display: none;
     position: absolute;
     padding: 20px;
     border: 1px solid teal;
+    z-index: 30;
+    background: $background-white-color;
+  }
+
+  &__item:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  &__link {
+    color: $text-white-theme-color;
+    transition: color $transition-delay;
+  }
+
+  &__link:hover {
+    color: $accent-color;
   }
 }
 .header {
@@ -90,6 +145,8 @@
     background: $background-dark-color;
     border-radius: 5px;
     padding: 5px 16px;
+    font-weight: bold;
+    font-size: 15px;
 
     & span {
       margin-left: 11px;
@@ -97,7 +154,7 @@
   }
 
   &__search input {
-    width: 330px;
+    width: 280px;
     height: 48px;
     padding: 0 18px;
     border: 1px solid #EDEDED;
@@ -106,11 +163,16 @@
     background: url("../../icons/loupe.svg") no-repeat center right 18px;
   }
 
+  &__user-img {
+    padding: 0 15px;
+  }
+
   &__user-img,
   &__categories div {
     display: flex;
     align-items: center;
     flex-direction: column;
+    cursor: pointer;
   }
 
   &__user-img svg,
@@ -118,28 +180,116 @@
     fill: $icons-standart-color;
   }
 
-  &__user-img > span {
-    margin-top: 10px;
+  &__user-img > span,
+  &__categories div > span {
+    margin-top: 5px;
   }
 
   &__categories {
     display: flex;
     justify-content: space-between;
-  }
 
-  &__categories div > span {
-    margin-top: 10px;
+    &-button--svg {
+      position: relative;
+      display: block;
+    }
+
+    &-button--svg:before {
+      position: absolute;
+      content: '35';
+      top: 0;
+      right: 0;
+      border-radius: 20px;
+      background: $accent-color;
+    }
+  }
+  &__categories .icon {
+    position: relative;
   }
 
   &__categories div:not(:first-child){
-    margin-left: 26px;
+    margin-left: 13px;
+  }
+
+  &__categories-counter {
+    position: absolute;
+    background: $accent-color;
+    width: 18px;
+    height: 18px;
+    right: -11px;
+    top: -14px;
+    z-index: 5;
+    border-radius: 20px;
+    text-align: center;
+    color: $text-dark-theme-color;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 17px;
   }
 
   &__menu-list {
     display: flex;
     justify-content: space-between;
-    padding: 21px 0;
     list-style: none;
+  }
+
+  &__menu-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+
+    & > svg {
+      margin-left: 5px;
+      transform: rotate(-90deg);
+    }
+
+    &:hover {
+      & > a {
+        color: $accent-color;
+      }
+
+      & > svg {
+        fill: $accent-color;
+        transform: rotate(-270deg);
+      }
+
+      & > ul {
+        display: block;
+      }
+    }
+
+    & > ul {
+      top: 55px;
+    }
+  }
+
+  &__menu-link {
+    text-decoration: none;
+    color: $text-white-theme-color;
+    transition: color $transition-delay;
+  }
+
+  &__menu-link:hover {
+    color: $accent-color;
+  }
+
+  &__menu-item:nth-child(1) > a,
+  &__menu-item:nth-child(2) > a {
+    font-weight: bold;
+  }
+
+  &__menu--promo {
+    & > a {
+      color: $accent-color;
+    }
+    & > span {
+      color: $accent-color;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 17px;
+    }
   }
 }
 /* ========== End Header ========== */

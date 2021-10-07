@@ -44,31 +44,31 @@
                 </a>
               </li>
               <li class="item header-navigation__item">
-                <div class="header-navigation__link client-menu__thumb">
-                  <span class="client-menu__text">Клиенту</span>
+                <div class="header-navigation__link header-sublist__thumb">
+                  <span class="header-sublist__text">Клиенту</span>
                   <svg class="img" width="10" height="6">
                     <use href="./icons/sprite.svg#icon-arrow"></use>
                   </svg>
                 </div>
-<!--                <ul class="list client-menu__list">-->
-<!--                  <li class="item client-menu__item">-->
-<!--                    <a class="link client-menu__link" href="#">Акции</a>-->
-<!--                  </li>-->
-<!--                  <li class="item client-menu__item">-->
-<!--                    <a class="link client-menu__link" href="#">Оплата</a>-->
-<!--                  </li>-->
-<!--                  <li class="item client-menu__item">-->
-<!--                    <a class="link client-menu__link" href="#">Доставка</a>-->
-<!--                  </li>-->
-<!--                  <li class="item client-menu__item">-->
-<!--                    <a class="link client-menu__link" href="#">Статус заказа</a>-->
-<!--                  </li>-->
-<!--                  <li class="item client-menu__item">-->
-<!--                    <a class="link client-menu__link" href="#">-->
-<!--                      Сервисные центры-->
-<!--                    </a>-->
-<!--                  </li>-->
-<!--                </ul>-->
+                <ul class="list header-sublist__list">
+                  <li class="item header-sublist__item">
+                    <a class="link header-sublist__link" href="#">Акции</a>
+                  </li>
+                  <li class="item header-sublist__item">
+                    <a class="link header-sublist__link" href="#">Оплата</a>
+                  </li>
+                  <li class="item header-sublist__item">
+                    <a class="link header-sublist__link" href="#">Доставка</a>
+                  </li>
+                  <li class="item header-sublist__item">
+                    <a class="link header-sublist__link" href="#">Статус заказа</a>
+                  </li>
+                  <li class="item header-sublist__item">
+                    <a class="link header-sublist__link" href="#">
+                      Сервисные центры
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="item header-navigation__item">
                 <a class="link header-navigation__link" href="#">Компаниям</a>
@@ -92,6 +92,11 @@
                 >
                   8 (800) 555-08-74
                 </a>
+                <span>
+                  <svg class="img" width="10" height="6">
+                    <use href="./icons/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </span>
               </li>
             </ul>
           </address>
@@ -119,23 +124,32 @@
           </div>
           <div class="header__categories">
             <div>
-              <svg class="img catalogue__button-svg" width="25" height="25">
-                <use href="./icons/sprite.svg#icon-diagram"></use>
-              </svg>
+              <div class="icon">
+                <span class="header__categories-counter">35</span>
+                <svg class="img header__categories-button--svg" width="25" height="25">
+                  <use href="./icons/sprite.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <span>Сравнение</span>
             </div>
             <div>
-              <svg class="img catalogue__button-svg" width="25" height="25">
-                <use href="./icons/sprite.svg#icon-heart"></use>
-              </svg>
+              <div class="icon">
+                <span class="header__categories-counter">35</span>
+                <svg class="img header__categories-button--svg" width="25" height="25">
+                  <use href="./icons/sprite.svg#icon-heart"></use>
+                </svg>
+              </div>
               <span>
                 Избранное
               </span>
             </div>
             <div>
-              <svg class="img catalogue__button-svg" width="25" height="25">
-                <use href="./icons/sprite.svg#icon-trolley"></use>
-              </svg>
+              <div class="icon">
+                <span class="header__categories-counter">35</span>
+                <svg class="img header__categories-button--svg" width="25" height="25">
+                  <use href="./icons/sprite.svg#icon-trolley"></use>
+                </svg>
+                </div>
               <span>
                 Корзина
               </span>
@@ -144,13 +158,54 @@
         </div>
         <div class="header__bottom-line">
           <ul class="header__menu-list">
-            <li class="header__menu-item">Акции</li>
-            <li class="header__menu-item">Распродажа</li>
-            <li class="header__menu-item">Электроинструмент</li>
-            <li class="header__menu-item">Строительная техника</li>
-            <li class="header__menu-item">Садовая техника</li>
-            <li class="header__menu-item">Климатическое оборудование</li>
-            <li class="header__menu-item">Ручные инструменты</li>
+            <li class="header__menu-item header__menu--promo">
+              <a href="#" class="header__menu-link">Акции</a>
+              <span>35</span>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Распродажа</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Электроинструмент</a>
+              <svg class="img" width="10" height="6">
+                <use href="./icons/sprite.svg#icon-arrow"></use>
+              </svg>
+              <ul class="list header-sublist__list">
+                <li class="item header-sublist__item">
+                  <a href="#" class="header__menu-link">Акции</a>
+                </li>
+                <li class="item header-sublist__item">
+                  <a href="#" class="header__menu-link">Распродажа</a>
+                </li>
+                <li class="item header-sublist__item">
+                  <a href="#" class="header__menu-link">Электроинструмент</a>
+                </li>
+                <li class="item header-sublist__item">
+                  <a href="#" class="header__menu-link">Строительная техника</a>
+                </li>
+                <li class="item header-sublist__item">
+                  <a href="#" class="header__menu-link">Садовая техника</a>
+                </li>
+                <li class="item header-sublist__item">
+                  <a href="#" class="header__menu-link">Климатическое оборудование</a>
+                </li>
+                <li class="item header-sublist__item">
+                  <a href="#" class="header__menu-link">Ручные инструменты</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Строительная техника</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Садовая техника</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Климатическое оборудование</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Ручные инструменты</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -563,7 +618,7 @@
                 <use href="./icons/sprite.svg#icon-medal"></use>
               </svg>
             </div>
-            <h3 class="thie-is__subtitle">
+            <h3 class="this-is__subtitle">
               Более 70 000 сертифицированных товаров
             </h3>
           </li>
@@ -573,7 +628,7 @@
                 <use href="./icons/sprite.svg#icon-coupons"></use>
               </svg>
             </div>
-            <h3 class="thie-is__subtitle">Гарантия самой низкой цены</h3>
+            <h3 class="this-is__subtitle">Гарантия самой низкой цены</h3>
           </li>
           <li class="this-is__item">
             <div class="this-is__svg-container">
@@ -581,7 +636,7 @@
                 <use href="./icons/sprite.svg#icon-wallet"></use>
               </svg>
             </div>
-            <h3 class="thie-is__subtitle">Удобные способы оплаты</h3>
+            <h3 class="this-is__subtitle">Удобные способы оплаты</h3>
           </li>
           <li class="this-is__item">
             <div class="this-is__svg-container">
@@ -589,7 +644,7 @@
                 <use href="./icons/sprite.svg#icon-truck"></use>
               </svg>
             </div>
-            <h3 class="thie-is__subtitle">
+            <h3 class="this-is__subtitle">
               Доставка во все регионы РФ, Беларусь и Украину
             </h3>
           </li>
@@ -599,7 +654,7 @@
                 <use href="./icons/sprite.svg#icon-cog"></use>
               </svg>
             </div>
-            <h3 class="thie-is__subtitle">Гарантийное обслуживание товаров</h3>
+            <h3 class="this-is__subtitle">Гарантийное обслуживание товаров</h3>
           </li>
         </ul>
       </div>
@@ -2902,5 +2957,190 @@
         </form>
       </div>
     </section>
+
+    <!--* footer Section -->
+  <section class="section footer__section">
+    <div class="container footer__container">
+      <div class="footer__top-line">
+        <ul class="list">
+          <li class="footer__top-line-item">
+            <a href="#" class="footer__top-line-link">Каталог</a>
+          </li>
+          <li class="footer__top-line-item">
+            <a href="#" class="footer__top-line-link">Электроинструмент</a>
+          </li>
+          <li class="footer__top-line-item">
+            <a href="#" class="footer__top-line-link">Строительная техника</a>
+          </li>
+          <li class="footer__top-line-item">
+            <a href="#" class="footer__top-line-link">Садовая техника</a>
+          </li>
+          <li class="footer__top-line-item">
+            <a href="#" class="footer__top-line-link">Климатическое оборудование</a>
+          </li>
+          <li class="footer__top-line-item">
+            <a href="#" class="footer__top-line-link">Ручные инструменты</a>
+          </li>
+        </ul>
+        <ul class="list">
+          <li class="footer__top-line-item">
+            <a href="#" class="footer__top-line-link">О компании</a>
+          </li>
+          <li class="footer__top-line-item">
+            <a href="#" class="footer__top-line-link">Команда</a>
+          </li>
+          <li class="footer__top-line-item">
+            <a href="#" class="footer__top-line-link">Вакансии</a>
+          </li>
+          <li class="footer__top-line-item">
+            <a href="#" class="footer__top-line-link">Бренды</a>
+          </li>
+          <li class="footer__top-line-item">
+            <a href="#" class="footer__top-line-link">Магазины</a>
+          </li>
+          <li class="footer__top-line-item">
+            <a href="#" class="footer__top-line-link">Контакты</a>
+          </li>
+        </ul>
+        <ul class="list">
+          <li class="footer__top-line-item">
+            <a href="#" class="footer__top-line-link">Клиенту</a>
+          </li>
+          <li class="footer__top-line-item">
+            <a href="#" class="footer__top-line-link">Акции</a>
+          </li>
+          <li class="footer__top-line-item">
+            <a href="#" class="footer__top-line-link">Оплата</a>
+          </li>
+          <li class="footer__top-line-item">
+            <a href="#" class="footer__top-line-link">Доставка</a>
+          </li>
+          <li class="footer__top-line-item">
+            <a href="#" class="footer__top-line-link">Статус заказа</a>
+          </li>
+          <li class="footer__top-line-item">
+            <a href="#" class="footer__top-line-link">Сервисные центры</a>
+          </li>
+        </ul>
+        <ul class="list">
+          <li class="footer__top-line-item">
+            <a href="#" class="footer__top-line-link">Компаниям</a>
+          </li>
+          <li class="footer__top-line-item">
+            <a href="#" class="footer__top-line-link">Сотрудничество</a>
+          </li>
+          <li class="footer__top-line-item">
+            <a href="#" class="footer__top-line-link">Реквизиты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__bottom-line">
+        <div class="footer__bottom-line-first-col">
+          <a href="/">
+            <img src="./images/logo.png" alt="logo">
+          </a>
+          <div class="text">
+            <span>© 2021 СтройБазар. Все права защищены</span>
+          </div>
+          <div class="text">
+            <a href="#">Политика конфиденциальности</a>
+          </div>
+          <div class="text">
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Карта сайта</a>
+          </div>
+        </div>
+        <div class="footer__bottom-line-second-col">
+          <div>
+            <div class="phones">
+              <div>
+                <svg class=" products-section__button-svg" width="18" height="18">
+                  <use href="./icons/sprite.svg#icon-arrow"></use>
+                </svg>
+                <span>+7 (495) 215-17-78</span>
+              </div>
+              <div>
+                <svg class=" products-section__button-svg" width="18" height="18">
+                  <use href="./icons/sprite.svg#icon-arrow"></use>
+                </svg>
+                <span>8 (800) 555-08-74</span>
+              </div>
+            </div>
+            <div class="other-info">
+              <div>
+                <svg class="products-section__button-svg" width="18" height="18">
+                  <use href="./icons/sprite.svg#icon-arrow"></use>
+                </svg>
+                <a href="mailto:info@stroybazar.ru">info@stroybazar.ru</a>
+              </div>
+              <div>
+                <svg class="products-section__button-svg" width="18" height="18">
+                  <use href="./icons/sprite.svg#icon-arrow"></use>
+                </svg>
+                <span>пн-вс 8:00 – 21:00</span>
+              </div>
+          </div>
+            </div>
+          <div class="header__search">
+            <input type="search" placeholder="поиск по каталогу">
+          </div>
+          </div>
+        <div class="footer__bottom-line-third-col">
+          <div class="messengers">
+            <div class="container-title">
+              <span>Пишите нам</span>
+            </div>
+            <div class="icons-list">
+              <span>
+                <svg class=" products-section__button-svg" width="19" height="19">
+                  <use href="./icons/sprite.svg#icon-telegram"></use>
+                </svg>
+              </span>
+              <span>
+                <svg class=" products-section__button-svg" width="19" height="19">
+                  <use href="./icons/sprite.svg#icon-telegram"></use>
+                </svg>
+              </span>
+              <span>
+                <svg class=" products-section__button-svg" width="19" height="19">
+                  <use href="./icons/sprite.svg#icon-telegram"></use>
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="socials">
+            <div class="container-title">
+              <span>Мы в соцсетях:</span>
+            </div>
+            <div class="icons-list">
+              <span>
+                <svg class=" products-section__button-svg" width="19" height="19">
+                  <use href="./icons/sprite.svg#icon-telegram"></use>
+                </svg>
+              </span>
+              <span>
+                <svg class=" products-section__button-svg" width="19" height="19">
+                  <use href="./icons/sprite.svg#icon-telegram"></use>
+                </svg>
+              </span>
+              <span>
+                <svg class=" products-section__button-svg" width="19" height="19">
+                  <use href="./icons/sprite.svg#icon-telegram"></use>
+                </svg>
+              </span>
+              <span>
+                <svg class=" products-section__button-svg" width="19" height="19">
+                  <use href="./icons/sprite.svg#icon-telegram"></use>
+                </svg>
+              </span>
+            </div>
+            <div class="yandex-market">
+              <img src="./images/index/yandex-market.png" alt="yandex-market">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   </body>
 </html>

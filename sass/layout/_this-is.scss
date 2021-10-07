@@ -22,6 +22,10 @@
     color: $title-dark-theme-color;
   }
 
+  &__subtitle {
+    color: $text-dark-theme-color;
+  }
+
   &__svg-container {
     display: flex;
     justify-content: center;
